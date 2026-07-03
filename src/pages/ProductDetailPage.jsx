@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// 🔥 Змінюємо імпорт на "react-router-dom"
 import { useParams, useNavigate } from 'react-router-dom'; 
 import productsData from '../mocks/products.json';
 import '../assets/scss/quantity.scss';

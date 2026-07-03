@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router'; 
+import { Link } from 'react-router-dom'; 
 import useCartStore from '../store/useCartStore';
 
 export default function CartPage() {
@@ -14,7 +14,6 @@ export default function CartPage() {
       <div className="container">
         <h2>Your cart is empty 🛒</h2>
         <p>Looks like you haven't added anything to your cart yet.</p>
-        {/* Прибираємо початковий сліш для стабільної роботи HashRouter */}
         <Link to="catalog" className="btn">
           Go to Catalog
         </Link>
@@ -31,7 +30,6 @@ export default function CartPage() {
           {cart.map((item) => (
             <div key={item.id} className="cart-item">
               <div>
-                {/* Огортаємо шлях картинки та плейсхолдера в динамічний BASE_URL */}
                 <img 
                   src={item.img ? `${import.meta.env.BASE_URL}${item.img}` : `${import.meta.env.BASE_URL}img/placeholder.jpg`} 
                   alt={item.title} 

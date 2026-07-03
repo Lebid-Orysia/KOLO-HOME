@@ -10,7 +10,6 @@ import 'swiper/css/effect-fade';
 
 import './HeroSlider.scss';
 
-// Прописуємо відносні шляхи до папки public/img/
 const slidesData = [
   {
     id: 1,

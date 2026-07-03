@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router'; 
+import { useParams, Link } from 'react-router-dom'; 
 import productsData from '../mocks/products.json'; 
 
 export default function CategoryProducts() {
@@ -18,14 +18,13 @@ export default function CategoryProducts() {
     <div className="catalog__grid">
       {categoryItems.map((product) => (
         <Link 
-          // Міняємо шлях на відносний (без першого слішу), щоб HashRouter правильно відпрацював усередині підпапки
-          to={`/catalog/${categoryName}/${product.id}`}
+          // 🔥 2. Забираємо початковий сліш, щоб лінк став відносним і HashRouter не губився
+          to={`${product.id}`}
           className="card" 
           key={product.id}
           style={{ textDecoration: 'none', color: 'inherit' }} 
         >
           <div className="card__image">
-            {/* Додаємо префікс для картинки з JSON */}
             <img src={`${import.meta.env.BASE_URL}${product.img}`} alt={product.title} />
           </div>
           <div className="card__content">
