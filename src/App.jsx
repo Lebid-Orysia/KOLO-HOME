@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router";
+import { Outlet, Link } from "react-router-dom"; 
 import React, { useState, useEffect } from 'react';
 import useCartStore from './store/useCartStore';
 import { initSidebarScroll } from "./assets/js/sidebar-scroll";
