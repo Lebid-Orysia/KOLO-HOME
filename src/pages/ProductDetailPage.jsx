@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router';
+// 🔥 Змінюємо імпорт на "react-router-dom"
+import { useParams, useNavigate } from 'react-router-dom'; 
 import productsData from '../mocks/products.json';
 import '../assets/scss/quantity.scss';
 import useCartStore from '../store/useCartStore';
@@ -56,7 +57,6 @@ export default function ProductDetailPage() {
               <h1 className="product-detail__title">{product.title}</h1>
               <p className="product-detail__price">{product.price}</p>
 
-
               <div className="quantity-selector">
                 <span className="quantity-selector__label"></span>
 
@@ -75,7 +75,6 @@ export default function ProductDetailPage() {
                 </div>
               </div>
 
-              {/* ------------------------- */}
               <div className="product-detail__actions">
                 <button className="btn-buy" type="button" onClick={handleAddToCartClick}>
                   Add to cart

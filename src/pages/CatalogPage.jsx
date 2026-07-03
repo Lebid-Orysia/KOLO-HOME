@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router';
+import { NavLink, Outlet } from 'react-router-dom'; 
 import Footer from '../components/Footer';
 
 export default function CatalogPage() {
@@ -12,7 +12,6 @@ export default function CatalogPage() {
             <div className="shop-catalog__title">Categories</div>
             <ul className="shop-catalog__list">
               <li>
-                {/* Робимо шляхи відносними — прибираємо початковий слеш та /catalog, бо ми вже тут */}
                 <NavLink to="wreaths" className="shop-catalog__item">
                   Wreaths
                 </NavLink>
@@ -33,11 +32,9 @@ export default function CatalogPage() {
                 </NavLink>
               </li>
               <li>
-                <li>
                 <NavLink to="flowersHeads" className="shop-catalog__item">
                   Flower heads
                 </NavLink>
-              </li>
               </li>
               <li>
                 <NavLink to="butterflies" className="shop-catalog__item">
