@@ -1,4 +1,4 @@
-// Змінюємо джерело імпорту на react-router-dom
+
 import { createHashRouter, redirect } from "react-router-dom"; 
 
 import HomePage from "./pages/HomePage";
