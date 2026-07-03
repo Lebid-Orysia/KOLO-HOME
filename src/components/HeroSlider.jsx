@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
-// Імпортуємо стилі Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,33 +9,27 @@ import 'swiper/css/effect-fade';
 
 import './HeroSlider.scss';
 
-// Імпортуємо картинки напряму, щоб Vite коректно опрацював їх при збірці
-import bgBlue from '../../assets/images/blue-bg.webp';
-import bgOrange from '../../assets/images/orange-bg.webp';
-import bgGreen from '../../assets/images/green-bg.webp';
-import bgPastel from '../../assets/images/pastel-bg.webp';
-
-// Оновлений масив із правильними посиланнями на змінні
+// Прописуємо відносні шляхи до папки public/img/
 const slidesData = [
   {
     id: 1,
     text: 'Minimal wreaths for modern homes',
-    bgImage: bgBlue
+    bgImage: 'img/blue-bg.webp'
   },
   {
     id: 2,
     text: 'Handcrafted with love and nature',
-    bgImage: bgOrange
+    bgImage: 'img/orange-bg.webp'
   },
   {
     id: 3,
     text: 'Earthy aesthetics, woven by hand',
-    bgImage: bgGreen
+    bgImage: 'img/green-bg.webp'
   },
   {
     id: 4,
     text: 'Simple details for timeless interiors',
-    bgImage: bgPastel
+    bgImage: 'img/pastel-bg.webp'
   }
 ];
 
@@ -50,7 +43,7 @@ const HeroSlider = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 4000, // 3000ms може здатися швидкуватим для читання + fade-ефекту в 1300ms. 4000ms зазвичай комфортніше
+          delay: 4000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
@@ -61,14 +54,15 @@ const HeroSlider = () => {
           <SwiperSlide key={slide.id}>
             <div
               className="hero-slide-bg"
-              style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(${slide.bgImage})` }}
+              // Підставляємо import.meta.env.BASE_URL, щоб на GitHub Pages шлях став /KOLO-HOME/img/...
+              style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(${import.meta.env.BASE_URL}${slide.bgImage})` }}
             >
               <div className="container">
                 <div className="hero__content">
-                  {/* h1 краще для головного екрану з точки зору SEO */}
                   <h1 className="hero__title">{slide.text}</h1>
-                  <a href="/catalog" className="btn btn--primary">
-                    Shop collection
+                  {/* Замість жорсткого слішу в href робимо посилання відносним для стабільності роутера */}
+                  <a href="catalog" className="btn">
+                    Start shop
                   </a>
                 </div>
               </div>
