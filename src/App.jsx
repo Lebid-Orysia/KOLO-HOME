@@ -4,27 +4,24 @@ import useCartStore from './store/useCartStore';
 import { initSidebarScroll } from "./assets/js/sidebar-scroll";
 
 export default function App() {
-  // Стан для мобільного меню (бургера)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const cart = useCartStore((state) => state.cart);
   const isCartOpen = useCartStore((state) => state.isCartOpen);
   const setIsCartOpen = useCartStore((state) => state.setIsCartOpen);
-  const handleAddToCart = useCartStore((state) => state.handleAddToCart);
   const handleUpdateQuantity = useCartStore((state) => state.handleUpdateQuantity);
   const handleRemoveFromCart = useCartStore((state) => state.handleRemoveFromCart);
 
   const totalItems = useCartStore((state) => state.getTotalItems());
   const totalPrice = useCartStore((state) => state.getTotalPrice());
 
-  // Функції для керування бургером
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
   useEffect(() => {
     initSidebarScroll();
   }, []);
-  // UX-фішка: якщо відкритий бургер АБО кошик — сторінка на фоні не скролиться
+
   useEffect(() => {
     if (isMenuOpen || isCartOpen) {
       document.body.style.overflow = 'hidden';
@@ -34,22 +31,24 @@ export default function App() {
     return () => { document.body.style.overflow = ''; };
   }, [isMenuOpen, isCartOpen]);
 
-
   return (
     <div className="page-wrapper">
 
       {/* HEADER */}
       <header className="header">
         <div className="container header__container">
-          <Link to='/' className="logo" onClick={closeMenu}>
-            <img src="/src/assets/images/kolo-home-logo.svg" alt="KOLO HOME Logo" />
+          {/* Для логотипу прибираємо жорсткий сліш і використовуємо відносний шлях для роутера */}
+          <Link to='' className="logo" onClick={closeMenu}>
+            {/* Переконайся, що перенесла логотип у public/img/ або скоригуй шлях */}
+            <img src={`${import.meta.env.BASE_URL}img/kolo-home-logo.svg`} alt="KOLO HOME Logo" />
           </Link>
           <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
             <ul className="nav__list">
-              <li><Link to='/' onClick={closeMenu}>Home</Link></li>
-              <li><Link to='/catalog' onClick={closeMenu}>Catalog</Link></li>
-              <li><Link to='/about' onClick={closeMenu}>About</Link></li>
-              <li><Link to='/contacts' onClick={closeMenu}>Contacts</Link></li>
+              {/* Прибираємо початкові сліші для стабільності HashRouter */}
+              <li><Link to='' onClick={closeMenu}>Home</Link></li>
+              <li><Link to='catalog' onClick={closeMenu}>Catalog</Link></li>
+              <li><Link to='about' onClick={closeMenu}>About</Link></li>
+              <li><Link to='contacts' onClick={closeMenu}>Contacts</Link></li>
             </ul>
           </nav>
 
@@ -81,7 +80,7 @@ export default function App() {
               )}
             </button>
 
-              <button
+            <button
               className={`burger ${isMenuOpen ? 'burger--active' : ''}`}
               onClick={toggleMenu}
               type="button"
@@ -90,7 +89,6 @@ export default function App() {
               <span />
               <span />
             </button>
-            
           </div>
         </div>
       </header>
@@ -98,7 +96,6 @@ export default function App() {
       <main>
         <Outlet />
       </main>
-
 
       {/* --- МОДАЛЬНИЙ САЙДБАР КОШИКА --- */}
       {isCartOpen && (
@@ -128,15 +125,19 @@ export default function App() {
               const itemQuantity = Number(item.quantity || 0);
               const itemTotalRow = itemPrice * itemQuantity;
 
+              {/* Зверни увагу: тут було item.image, а в кошику item.img. Я об'єднав їх через оператор АБО */}
+              const productImg = item.img || item.image;
+
               return (
                 <div key={item.id} className="cart-sidebar__item">
                   <img
-                    src={item.image || '/src/assets/images/placeholder.jpg'}
-                    alt={item.name}
-                    className="cart-sidebar__item-img" />
+                    src={productImg ? `${import.meta.env.BASE_URL}${productImg}` : `${import.meta.env.BASE_URL}img/placeholder.jpg`}
+                    alt={item.title || item.name}
+                    className="cart-sidebar__item-img" 
+                  />
 
                   <div className="cart-sidebar__item-info">
-                    <h4>{item.name}</h4>
+                    <h4>{item.title || item.name}</h4>
                     <p className="cart-sidebar__item-price">{itemPrice} UAH</p>
 
                     <div className="cart-sidebar__quantity-ctrl">

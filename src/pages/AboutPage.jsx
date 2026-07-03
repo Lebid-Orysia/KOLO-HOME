@@ -87,7 +87,7 @@ export default function AboutPage() {
         {/* Фонове відео з динамічним префіксом */}
         <div className="about__video-wrapper">
           <video
-            src={`${import.meta.env.BASE_URL}about-video.mp4`} // 👈 Оновили шлях тут
+            src={`${import.meta.env.BASE_URL}about-video.mp4`} 
             autoPlay
             muted
             loop
