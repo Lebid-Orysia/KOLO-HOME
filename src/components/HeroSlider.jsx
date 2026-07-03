@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Додаємо цей імпорт для правильного клієнтського роутингу
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
@@ -60,10 +61,12 @@ const HeroSlider = () => {
               <div className="container">
                 <div className="hero__content">
                   <h1 className="hero__title">{slide.text}</h1>
-                  {/* Замість жорсткого слішу в href робимо посилання відносним для стабільності роутера */}
-                  <a href="catalog" className="btn">
+                  
+                  {/* Замінили тег <a> на <Link> з атрибутом to="/catalog" */}
+                  <Link to="/catalog" className="btn">
                     Start shop
-                  </a>
+                  </Link>
+                  
                 </div>
               </div>
             </div>
