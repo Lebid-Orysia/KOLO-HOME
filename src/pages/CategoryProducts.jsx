@@ -18,13 +18,15 @@ export default function CategoryProducts() {
     <div className="catalog__grid">
       {categoryItems.map((product) => (
         <Link 
+          // Міняємо шлях на відносний (без першого слішу), щоб HashRouter правильно відпрацював усередині підпапки
           to={`/catalog/${categoryName}/${product.id}`}
           className="card" 
           key={product.id}
           style={{ textDecoration: 'none', color: 'inherit' }} 
         >
           <div className="card__image">
-            <img src={product.img} alt={product.title} />
+            {/* Додаємо префікс для картинки з JSON */}
+            <img src={`${import.meta.env.BASE_URL}${product.img}`} alt={product.title} />
           </div>
           <div className="card__content">
             <h3>{product.title}</h3>
