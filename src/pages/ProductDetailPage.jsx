@@ -49,7 +49,7 @@ export default function ProductDetailPage() {
           </button>
           <div className="product-detail">
             <div className="product-detail__image">
-              <img src={product.img} alt={product.title} />
+              <img src={`${import.meta.env.BASE_URL}${product.img}`} alt={product.title} />
             </div>
             <div className="product-detail__info">
               <span className="product-detail__category">{categoryName}</span>
