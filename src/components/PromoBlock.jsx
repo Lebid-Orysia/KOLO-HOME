@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. Імпортуємо Link
 
 const PromoBlock = ({ image, title, description, buttonText, linkTo, imageLeft = true }) => {
   return (
@@ -10,9 +11,10 @@ const PromoBlock = ({ image, title, description, buttonText, linkTo, imageLeft =
         <h2>{title}</h2>
         <p>{description}</p>
         
-        <a href={linkTo} className="promo-block__btn">
+        {/* 2. Замінюємо <a> з href={linkTo} на <Link> з to={linkTo} */}
+        <Link to={linkTo} className="promo-block__btn">
           {buttonText}
-        </a>
+        </Link>
       </div>
     </section>
   );
