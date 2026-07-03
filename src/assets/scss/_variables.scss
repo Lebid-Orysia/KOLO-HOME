@@ -1,0 +1,28 @@
+$color_1: #2B2B2B;
+$color_2: #00A000;
+$color_3: #006400;
+$color_4: #FAFAF8;
+$color_5: #7A7F6A;
+$color_6: #777;
+$color_7: #555;
+$color_8: #fff;
+$color_9: #333;
+$color_10: #666;
+
+$font-family_1: "Lexend Giga",
+sans-serif;
+$font-family_2: 'Inter',
+'Helvetica Neue',
+Arial,
+sans-serif;
+
+
+$background-color_1: #FAFAF8;
+$background-color_2: #2B2B2B;
+$background-color_3: #f9f9f9;
+$background-color_4: #fff;
+$border-color_1: #00A000;
+
+@mixin fz($px) {
+	font-size: ($px / 16) * 1rem;
+}
