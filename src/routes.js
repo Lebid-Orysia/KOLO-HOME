@@ -1,5 +1,5 @@
-// 1. Міняємо createBrowserRouter на createHashRouter в імпорті
-import { createHashRouter, redirect } from "react-router"; 
+// Змінюємо джерело імпорту на react-router-dom
+import { createHashRouter, redirect } from "react-router-dom"; 
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -9,24 +9,15 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import App from "./App";
 import ContactsPage from "./pages/ContactsPage";
 
-// 2. Викликаємо createHashRouter замість старого роутера
 export const router = createHashRouter([
   {
     path: '/',
     Component: App,
     children: [
-      { index: true,
-        Component: HomePage 
-      },
-      { path: 'about',
-        Component: AboutPage 
-      },
-      { path: 'catalog/:categoryName/:productId', 
-        Component: ProductDetailPage 
-      },
-      { path: 'contacts',
-        Component: ContactsPage
-      },
+      { index: true, Component: HomePage },
+      { path: 'about', Component: AboutPage },
+      { path: 'catalog/:categoryName/:productId', Component: ProductDetailPage },
+      { path: 'contacts', Component: ContactsPage },
       {
         path: 'catalog',
         Component: CatalogPage,
