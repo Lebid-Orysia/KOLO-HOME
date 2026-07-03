@@ -14,7 +14,8 @@ export default function CartPage() {
       <div className="container">
         <h2>Your cart is empty 🛒</h2>
         <p>Looks like you haven't added anything to your cart yet.</p>
-        <Link to="/catalog" className="btn">
+        {/* Прибираємо початковий сліш для стабільної роботи HashRouter */}
+        <Link to="catalog" className="btn">
           Go to Catalog
         </Link>
       </div>
@@ -30,7 +31,11 @@ export default function CartPage() {
           {cart.map((item) => (
             <div key={item.id} className="cart-item">
               <div>
-                <img src={item.img || '/src/assets/images/placeholder.jpg'} alt={item.title} />
+                {/* Огортаємо шлях картинки та плейсхолдера в динамічний BASE_URL */}
+                <img 
+                  src={item.img ? `${import.meta.env.BASE_URL}${item.img}` : `${import.meta.env.BASE_URL}img/placeholder.jpg`} 
+                  alt={item.title} 
+                />
                 <div>
                   <h3>{item.title}</h3>
                   <p>Price: {item.price} UAH</p>
