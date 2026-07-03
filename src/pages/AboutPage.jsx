@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
 
@@ -51,7 +50,7 @@ export default function AboutPage() {
             <div className={`about__item ${activeIndex === 1 ? 'about__item--active' : ''}`}>
               <button className="about__trigger" onClick={() => toggleAccordion(1)}>
                 <span className="about__subtitle">📦 Ordering Rules</span>
-                <span className="about__icon"></span>
+                <span className="about `about__icon`"></span>
               </button>
               <div className="about__content">
                 <div className="about__inner">
@@ -85,10 +84,10 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Фонове відео */}
+        {/* Фонове відео з динамічним префіксом */}
         <div className="about__video-wrapper">
           <video
-            src="/about-video.mp4"
+            src={`${import.meta.env.BASE_URL}about-video.mp4`} // 👈 Оновили шлях тут
             autoPlay
             muted
             loop
