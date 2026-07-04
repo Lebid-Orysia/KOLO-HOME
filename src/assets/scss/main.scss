@@ -767,7 +767,7 @@ header {
 	background: none;
 	border: none;
 	color: $color_5;
-	@include fz(1);
+	@include fz(16);
 	cursor: pointer;
 	display: flex;
 	flex-shrink: 0;

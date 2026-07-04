@@ -31,20 +31,18 @@ export default function App() {
     return () => { document.body.style.overflow = ''; };
   }, [isMenuOpen, isCartOpen]);
 
+
   return (
     <div className="page-wrapper">
 
       {/* HEADER */}
       <header className="header">
         <div className="container header__container">
-          {/* Для логотипу прибираємо жорсткий сліш і використовуємо відносний шлях для роутера */}
           <Link to='' className="logo" onClick={closeMenu}>
-            {/* Переконайся, що перенесла логотип у public/img/ або скоригуй шлях */}
             <img src={`${import.meta.env.BASE_URL}img/kolo-home-logo.svg`} alt="KOLO HOME Logo" />
           </Link>
           <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
             <ul className="nav__list">
-              {/* Прибираємо початкові сліші для стабільності HashRouter */}
               <li><Link to='' onClick={closeMenu}>Home</Link></li>
               <li><Link to='catalog' onClick={closeMenu}>Catalog</Link></li>
               <li><Link to='about' onClick={closeMenu}>About</Link></li>
@@ -124,8 +122,6 @@ export default function App() {
               const itemPrice = Number(item.price || 0);
               const itemQuantity = Number(item.quantity || 0);
               const itemTotalRow = itemPrice * itemQuantity;
-
-              {/* Зверни увагу: тут було item.image, а в кошику item.img. Я об'єднав їх через оператор АБО */}
               const productImg = item.img || item.image;
 
               return (
