@@ -6,11 +6,7 @@ import useCartStore from './store/useCartStore';
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const cart = useCartStore((state) => state.cart);
-  const isCartOpen = useCartStore((state) => state.isCartOpen);
-  const setIsCartOpen = useCartStore((state) => state.setIsCartOpen);
-  const handleUpdateQuantity = useCartStore((state) => state.handleUpdateQuantity);
-  const handleRemoveFromCart = useCartStore((state) => state.handleRemoveFromCart);
+  const {cart, isCartOpen, setIsCartOpen, handleUpdateQuantity, handleRemoveFromCart} = useCartStore();
 
   const totalItems = useCartStore((state) => state.getTotalItems());
   const totalPrice = useCartStore((state) => state.getTotalPrice());

@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import useCartStore from '../store/useCartStore';
 
 export default function CartPage() {
-  const cart = useCartStore((state) => state.cart);
-  const handleUpdateQuantity = useCartStore((state) => state.handleUpdateQuantity);
-  const handleRemoveFromCart = useCartStore((state) => state.handleRemoveFromCart);
+  const {cart, handleUpdateQuantity, handleRemoveFromCart} = useCartStore();
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 

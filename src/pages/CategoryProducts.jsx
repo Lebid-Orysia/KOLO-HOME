@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom'; 
-import productsData from '../mocks/products.json'; 
+import productsData from '/mocks/products.json'; 
 
 export default function CategoryProducts() {
   const { categoryName } = useParams();
@@ -23,7 +23,7 @@ export default function CategoryProducts() {
           key={product.id}
         >
           <div className="card__image">
-            <img src={`${import.meta.env.BASE_URL}${product.img}`} alt={product.title} />
+            <img src={`${import.meta.env.BASE_URL}assets/images${product.img}`} alt={product.title} />
           </div>
           <div className="card__content">
             <h3>{product.title}</h3>

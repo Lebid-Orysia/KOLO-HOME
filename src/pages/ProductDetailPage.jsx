@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; 
-import productsData from '../mocks/products.json';
+import productsData from '/mocks/products.json';
 import '../assets/scss/quantity.scss';
 import useCartStore from '../store/useCartStore';
 import Footer from '../components/Footer';
@@ -34,10 +34,6 @@ export default function ProductDetailPage() {
       }
       return 1;
     });
-  };
-
-  const handleAddToCartClick = () => {
-    handleAddToCart(product, quantity);
   };
 
   return (
@@ -74,8 +70,8 @@ export default function ProductDetailPage() {
                 </div>
               </div>
 
-              <div className="product-detail__actions">
-                <button className="btn-buy" type="button" onClick={handleAddToCartClick}>
+              <div className="product-detail__actions">  
+                <button className="btn-buy" type="button" onClick={() => handleAddToCart(product, quantity)}>
                   Add to cart
                 </button>
               </div>
