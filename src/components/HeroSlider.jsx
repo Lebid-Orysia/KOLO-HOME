@@ -54,14 +54,11 @@ const HeroSlider = () => {
           <SwiperSlide key={slide.id}>
             <div
               className="hero-slide-bg"
-              // Підставляємо import.meta.env.BASE_URL, щоб на GitHub Pages шлях став /KOLO-HOME/img/...
               style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(${import.meta.env.BASE_URL}${slide.bgImage})` }}
             >
               <div className="container">
                 <div className="hero__content">
                   <h1 className="hero__title">{slide.text}</h1>
-                  
-                  {/* Замінили тег <a> на <Link> з атрибутом to="/catalog" */}
                   <Link to="/catalog" className="btn">
                     Start shop
                   </Link>

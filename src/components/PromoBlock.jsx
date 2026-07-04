@@ -10,7 +10,6 @@ const PromoBlock = ({ image, title, description, buttonText, linkTo, imageLeft =
       <div className="promo-block__text-side">
         <h2>{title}</h2>
         <p>{description}</p>
-  
         <Link to={linkTo} className="promo-block__btn">
           {buttonText}
         </Link>

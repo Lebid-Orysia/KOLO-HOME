@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default function ContactsPage() {
   return (
     <div className="fullscreen-map-wrapper">

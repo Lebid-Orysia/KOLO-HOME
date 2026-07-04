@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom"; 
 import React, { useState, useEffect } from 'react';
 import useCartStore from './store/useCartStore';
-import { initSidebarScroll } from "./assets/js/sidebar-scroll";
+
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +18,7 @@ export default function App() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  useEffect(() => {
-    initSidebarScroll();
-  }, []);
-
+ 
   useEffect(() => {
     if (isMenuOpen || isCartOpen) {
       document.body.style.overflow = 'hidden';

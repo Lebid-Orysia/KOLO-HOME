@@ -18,11 +18,9 @@ export default function CategoryProducts() {
     <div className="catalog__grid">
       {categoryItems.map((product) => (
         <Link 
-          // 🔥 2. Забираємо початковий сліш, щоб лінк став відносним і HashRouter не губився
           to={`${product.id}`}
           className="card" 
           key={product.id}
-          style={{ textDecoration: 'none', color: 'inherit' }} 
         >
           <div className="card__image">
             <img src={`${import.meta.env.BASE_URL}${product.img}`} alt={product.title} />

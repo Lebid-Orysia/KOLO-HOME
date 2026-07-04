@@ -1,8 +1,15 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom'; 
+import { NavLink, Outlet } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
+import { initSidebarScroll } from '../js/sidebar-scroll';
 
 export default function CatalogPage() {
+  useEffect(() => {
+    initSidebarScroll();
+  }, []);
+
+
   return (
     <>
       <div className="container">
