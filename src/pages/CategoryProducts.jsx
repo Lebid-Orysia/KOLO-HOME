@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'; 
-import productsData from '/mocks/products.json'; 
 
 export default function CategoryProducts() {
   const { categoryName } = useParams();
-  const categoryItems = productsData[categoryName];
+
+  const [productsData, setProductsData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const origin = window.location.origin;
+    const baseUrl = import.meta.env.BASE_URL;
+    const cleanBase = baseUrl.startsWith('/') ? baseUrl : `/${baseUrl}`;
+    const targetUrl = `${origin}${cleanBase}mocks/products.json`.replace(/([^:]\/)\/+/g, "$1");
+
+    console.log("✈️ Шлях запиту для категорій:", targetUrl);
+
+    fetch(targetUrl)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Не вдалося завантажити товари');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setProductsData(data); 
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+      });
+  }, []);
+
+  if (isLoading) {
+    return <div className="loading">Loading...</div>;
+  }
+
+  const categoryItems = productsData ? productsData[categoryName] : null;
 
   if (!categoryItems || categoryItems.length === 0) {
     return (

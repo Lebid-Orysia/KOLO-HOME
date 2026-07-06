@@ -1,52 +1,58 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import HeroSlider from '../components/HeroSlider';
 import PromoBlock from '../components/PromoBlock';
 import Footer from '../components/Footer';
 
 export default function HomePage() {
+  const [promoData, setPromoData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const origin = window.location.origin;
+    const baseUrl = import.meta.env.BASE_URL;
+    
+    const cleanBase = baseUrl.startsWith('/') ? baseUrl : `/${baseUrl}`;
+    const targetUrl = `${origin}${cleanBase}mocks/promo.json`.replace(/([^:]\/)\/+/g, "$1");
+
+    fetch(targetUrl)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Сервер повернув статус ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setPromoData(data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+      });
+  }, []);
+
   return (
     <>
-        <HeroSlider />
+      <HeroSlider />
 
-        <div className="home-page">
-          <PromoBlock
-            image={`${import.meta.env.BASE_URL}promo-block-img/1.webp`}
-            title="Ready-made designer wreaths"
-            description="Exclusive decor for your home that creates a festive and cozy atmosphere at first sight. Choose your perfect wreath for your door or table."
-            buttonText="View"
-            linkTo="/catalog/wreathsCollected"
-            imageLeft={true}
-          />
+      <div className="home-page">
+        {isLoading ? (
+          <div className="loading">Loading...</div>
+        ) : (
+          promoData.map((block) => (
+            <PromoBlock
+              key={block.id}
+              image={`${import.meta.env.BASE_URL}${block.image}`}
+              title={block.title}
+              description={block.description}
+              buttonText={block.buttonText}
+              linkTo={block.linkTo}
+              imageLeft={block.imageLeft}
+            />
+          ))
+        )}
+      </div>
 
-          <PromoBlock
-            image={`${import.meta.env.BASE_URL}promo-block-img/4.webp`}
-            title="Elegant dried flowers"
-            description="Beauty that doesn't fade over the years. Lavender, cotton, lagurus and stylish dried flowers for creating long-lasting and aesthetic interior bouquets."
-            buttonText="View"
-            linkTo="/catalog/driedFlowers"
-            imageLeft={false}
-          />
-
-          <PromoBlock
-            image={`${import.meta.env.BASE_URL}promo-block-img/6.webp`}
-            title="Decorative branches"
-            description="Fresh and artificial decorative branches, greenery and coniferous elements. Add volume, natural splendor and texture to your compositions."
-            buttonText="View"
-            linkTo="/catalog/branches"
-            imageLeft={true}
-          />
-
-          <PromoBlock
-            image={`${import.meta.env.BASE_URL}promo-block-img/8.webp`}
-            title="Decorative butterflies"
-            description="Lightweight, realistic butterflies on convenient clips and wire. A small detail that will bring any wreath or floral arrangement to life."
-            buttonText="View"
-            linkTo="/catalog/butterflies"
-            imageLeft={false}
-          />
-        </div>
-
-        <Footer/>
+      <Footer />
     </>
   );
 }

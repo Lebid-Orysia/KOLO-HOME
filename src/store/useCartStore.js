@@ -14,12 +14,21 @@ const useCartStore = create(
         if (typeof rawPrice === 'string') {
           rawPrice = rawPrice.replace(/[^0-9]/g, '');
         }
+        const baseUrl = import.meta.env.BASE_URL || '/';
+        const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+        let imgPath = product.img || product.image || '';
+        if (imgPath.startsWith('/')) {
+          imgPath = imgPath.substring(1);
+        }
+        const fullImagePath = imgPath 
+          ? `${cleanBase}assets/images/${imgPath}`.replace(/([^:]\/)\/+/g, "$1")
+          : `${cleanBase}assets/images/placeholder.jpg`.replace(/([^:]\/)\/+/g, "$1");
 
         const standardizedProduct = {
           id: product.id,
           name: product.title || product.name || 'Product',
           price: Number(rawPrice || 0),
-          image: product.img || product.image || '/src/assets/images/placeholder.jpg'
+          image: fullImagePath 
         };
 
         const addedQuantity = Number(quantity || 1);
@@ -65,7 +74,6 @@ const useCartStore = create(
         }));
       },
 
-   
       getTotalItems: () => {
         return get().cart.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
       },

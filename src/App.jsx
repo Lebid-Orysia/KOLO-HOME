@@ -2,7 +2,6 @@ import { Outlet, Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import useCartStore from './store/useCartStore';
 
-
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,7 +31,7 @@ export default function App() {
       <header className="header">
         <div className="container header__container">
           <Link to='' className="logo" onClick={closeMenu}>
-            <img src={`${import.meta.env.BASE_URL}img/kolo-home-logo.svg`} alt="KOLO HOME Logo" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/kolo-home-logo.svg`} alt="KOLO HOME Logo" />
           </Link>
           <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
             <ul className="nav__list">
@@ -115,12 +114,12 @@ export default function App() {
               const itemPrice = Number(item.price || 0);
               const itemQuantity = Number(item.quantity || 0);
               const itemTotalRow = itemPrice * itemQuantity;
-              const productImg = item.img || item.image;
+              const productImg = item.image || item.img;
 
               return (
                 <div key={item.id} className="cart-sidebar__item">
                   <img
-                    src={productImg ? `${import.meta.env.BASE_URL}${productImg}` : `${import.meta.env.BASE_URL}img/placeholder.jpg`}
+                    src={productImg || `${import.meta.env.BASE_URL}assets/images/placeholder.jpg`}
                     alt={item.title || item.name}
                     className="cart-sidebar__item-img" 
                   />

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "text": "Minimal wreaths for modern homes",
+    "bgImage": "assets/images/blue-bg.webp"
+  },
+  {
+    "id": 2,
+    "text": "Handcrafted with love and nature",
+    "bgImage": "assets/images/orange-bg.webp"
+  },
+  {
+    "id": 3,
+    "text": "Earthy aesthetics, woven by hand",
+    "bgImage": "assets/images/green-bg.webp"
+  },
+  {
+    "id": 4,
+    "text": "Simple details for timeless interiors",
+    "bgImage": "assets/images/pastel-bg.webp"
+  }
+]
