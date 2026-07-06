@@ -2,6 +2,7 @@
 /* --- ЗМІННІ ТА МІКСИ --- */
 @use 'variables'as *;
 @use 'contacts';
+@use 'modalFeedback';
 
 /* --- БАЗОВІ СТИЛІ --- */
 *,
@@ -62,7 +63,7 @@ header {
 	left: 0;
 	top: 0;
 	z-index: 1000;
-	/* Контейнер хедера має тримати рівень */
+
 }
 
 .header {
@@ -100,7 +101,7 @@ header {
 .header__icons {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 20px;
 }
 
 .nav__list {
@@ -150,6 +151,12 @@ header {
 	}
 }
 
+.my-toast{
+	color: $color_2;
+	font-family: $font-family_1;
+	margin-top: 10px;
+	@include fz(16);
+}
 /* --- СОЦМЕРЕЖІ ТА КНОПКИ --- */
 .instagram,
 .facebook,
