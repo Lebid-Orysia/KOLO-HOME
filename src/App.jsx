@@ -13,7 +13,6 @@ export default function App() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
- 
   useEffect(() => {
     if (isMenuOpen || isCartOpen) {
       document.body.style.overflow = 'hidden';
