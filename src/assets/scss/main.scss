@@ -966,6 +966,30 @@ header {
 }
 
 // PROMOBLOCK
+@keyframes promoFadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes promoImageFade {
+	from {
+		opacity: 0;
+		transform: scale(0.98);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 .promo-block {
 	display: flex;
 	align-items: center;
@@ -981,6 +1005,8 @@ header {
 	}
 
 	&__image-side {
+		opacity: 0;
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -1000,6 +1026,7 @@ header {
 			font-size: 2rem;
 			margin-bottom: 15px;
 			color: $color_1;
+			opacity: 0;
 		}
 
 		p {
@@ -1007,6 +1034,7 @@ header {
 			line-height: 1.6;
 			margin-bottom: 25px;
 			color: $color_5;
+			opacity: 0;
 		}
 
 		.promo-block__btn {
@@ -1023,7 +1051,8 @@ header {
 			cursor: pointer;
 			width: 100%;
 			max-width: 150px;
-			transition: all 0.3s ease;
+			opacity: 0;
+			transition: background-color 0.3s ease, transform 0.3s ease;
 
 			&:hover {
 				background-color: $color_2;
@@ -1038,6 +1067,28 @@ header {
 
 	&.img-right {
 		flex-direction: row-reverse;
+	}
+
+	&.is-visible {
+		.promo-block__image-side {
+			animation: promoImageFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+			animation-delay: 0.1s;
+		}
+
+		h2 {
+			animation: promoFadeUp 0.8s ease-out forwards;
+			animation-delay: 0.3s;
+		}
+
+		p {
+			animation: promoFadeUp 0.8s ease-out forwards;
+			animation-delay: 0.5s;
+		}
+
+		.promo-block__btn {
+			animation: promoFadeUp 0.8s ease-out forwards;
+			animation-delay: 0.7s;
+		}
 	}
 }
 
