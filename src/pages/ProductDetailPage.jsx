@@ -79,7 +79,7 @@ function ProductDetailPage() {
               <p className="product-detail__price">{product.price}</p>
 
               <div className="quantity-selector">
-                <span className="quantity-selector__label">Кількість:</span>
+                <span className="quantity-selector__label"></span>
 
                 <div className="quantity-selector__controls">
                   <button
