@@ -1,0 +1,40 @@
+{
+  "title": "About",
+  "description": "Welcome to our cozy world of everlasting botanical beauty! We specialize in creating handcrafted wreaths, selecting unique branches, and designing exquisite dried flower arrangements. Our mission is to bring the warmth of nature, captivating textures, and a touch of timeless elegance into your home decor.",
+  "accordion": [
+    {
+      "id": 0,
+      "subtitle": "🕒 Online Store Hours",
+      "type": "text_with_note",
+      "text": "We are open Monday–Friday from 10 a.m. to 7 p.m.<br />Saturday and Sunday are our days off.",
+      "note": "⚡ Orders paid before 4 p.m. leave our warehouse the same day (except Monday). Paid after 4 p.m.? We will ship them the next business day. Monday orders are safely shipped on Tuesday."
+    },
+    {
+      "id": 1,
+      "subtitle": "📦 Ordering Rules",
+      "type": "list",
+      "items": [
+        "Minimum order amount is <strong>500 UAH</strong>.",
+        "Orders <strong>over 1000 UAH</strong> are packed in premium bubble wrap and placed securely in a sturdy box.",
+        "Orders <strong>under 1000 UAH</strong> are pre-packed with care at our warehouse and safely boxed at the Nova Poshta branch (according to their tariffs).",
+        "When choosing a Nova Poshta branch, please select branches that accept up to 30 kg."
+      ]
+    },
+    {
+      "id": 2,
+      "subtitle": "🌱 Delivery & Care",
+      "type": "text",
+      "text": "When placing your order, please provide your <strong>Viber or Telegram</strong> phone number so our manager can stay in touch. Before shipping, <strong>we can send you a real photo of your finished wreaths or dried flower arrangements</strong> via messenger! This allows you to look at the details, adjust your order, or replace items if necessary, ensuring you are 100% in love with your new botanical decor."
+    },
+    {
+      "id": 3,
+      "subtitle": "🎁 Loyalty Program & Discounts",
+      "type": "list",
+      "items": [
+        "Get a <strong>5% discount</strong> on your second order after leaving a review on our Instagram page.",
+        "Free delivery for all orders <strong>over 3000 UAH</strong>.",
+        "Wholesale prices are available for wedding agencies and interior designers (contact our manager for details)."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1222 @@
+{
+  "wreaths": [
+    {
+      "id": 1,
+      "title": "White wreath",
+      "desc": "Vine, handmade",
+      "full_desc": "A delicate and airy decorative wreath, handcrafted from flexible grapevine and painted a pure white. This piece serves as an elegant accent for any modern interior, adding a sense of lightness, freshness, and a festive mood to the space. It makes an ideal base for creating your own seasonal arrangements or stands beautifully on its own as a minimalist decoration.",
+      "price": "300 UAH",
+      "img": "/wreath/white.webp",
+      "features": [
+        "Diameter: 28 cm",
+        "Material: natural vine (painted)",
+        "Feature: 100% handmade",
+        "Color: matte white"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Brown wreath",
+      "desc": "Natural materials",
+      "full_desc": "Aesthetic interior wreath, made exclusively from natural ecological materials. Its deep brown and wood shades will add a special coziness, warmth and harmony with nature to your home. Textured base made of grapevine. ",
+      "price": "330 UAH",
+      "img": "/wreath/brown.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: 100% natural vine",
+      "Style: Eco",
+      "Purpose: for wall, door or fireplace decoration"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Straw wreath",
+      "desc": "Eco-style",
+      "full_desc": "Authentic eco-wreath made of selected natural straw. Its natural golden hue fills the home with sunlight, summer warmth and comfort. Dense and neat weaving makes this wreath a reliable basis for creativity, as well as a self-sufficient element of decor in the style of country, Provence or Scandinavian minimalism.",
+      "price": "270 UAH",
+      "img": "/wreath/yellow.webp",
+      "features": [
+      "Diameter: 32 cm",
+      "Material: premium quality natural straw",
+      "Style: Eco (Eco-style), Country",
+      "Advantages: fade-resistant, durable"
+      ]
+    }
+  ],
+  "wreathsCollected": [
+    {
+      "id": 4,
+      "title": "Spring wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "A bright and cheerful spring wreath that instantly transforms the space and creates an atmosphere of awakening nature. The composition harmoniously combines delicate greenery, primroses and elegant floral accents. This decor is ideal for decorating a home for the Easter holidays or simply to add juicy colors and freshness to the interior.",
+      "price": "1200 UAH",
+      "img": "/collected-wreaths/spring.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium textile flowers, artificial greenery, natural base",
+      "Theme: Spring, Easter, Floristry",
+      "Fastening: has a neat loop for hanging"
+      ]
+    },
+    {
+      "id": 144,
+      "title": "Peony wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "A luxurious and romantic wreath filled with the lush beauty of blooming peonies. The composition harmoniously combines full-blossomed pink and cream peony heads, delicate buds, and rich greenery. This exquisite decor is ideal for creating a warm, elegant atmosphere in your interior, bringing a touch of endless summer and floral sophistication to your home.",
+      "price": "1200 UAH",
+      "img": "/collected-wreaths/peony.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium textile peonies, mixed greenery, natural base",
+      "Theme: Summer, Romance, Floristry",
+      "Fastening: has a neat loop for hanging"
+  ]
+},
+    {
+      "id": 5,
+      "title": "Summer wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "A luxurious summer wreath that has absorbed all the beauty and warmth of the sunny season. The composition is created from imitation of bright wildflowers, lush green grasses and spikelets, symbolizing abundance and harmony. This wreath will become a wonderful summer amulet for your home, will fill the room with the energy of the sun and create an incredibly cozy, hospitable atmosphere.",
+      "price": "1100 UAH",
+      "img": "/collected-wreaths/summer.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: high-quality textile materials, decorative berries, eco-base",
+      "Theme: Summer, purple cotton, ethnic style",
+      "Care: easy cleaning from dust with a dry brush or hairdryer on cold mode"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Autumn wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "An incredibly cozy autumn wreath, made in warm crimson, gold and copper tones. The composition harmoniously combines realistic multi-colored leaves, small pumpkins. This decor will bring the atmosphere of golden autumn to your home, warm the interior with its colors and will become a wonderful decoration on the eve of the November season and cozy evenings with tea.",
+      "price": "1090 UAH",
+      "img": "/collected-wreaths/fall.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium quality textile leaves, decorative mini pumpkins, straw base",
+      "Theme: Autumn, Halloween, Harvest Festival",
+      "Style: Classic autumn mood"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Winter wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "A fabulous winter wreath that will bring the atmosphere of a snowy forest and a Christmas miracle to your home. The base of thick cast needles looks as realistic as possible, does not crumble and is gently dusted with artificial frost. The composition is decorated with white winter berries and silver accents. This wreath will be the perfect Christmas talisman for your door or holiday table.",
+      "price": "1200 UAH",
+      "img": "/collected-wreaths/winter.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium quality cast needles (environmentally friendly and safe), winter bird, eco-decor",
+      "Effect: light snowfall (artificial snow that does not crumble)",
+      "Theme: New Year, Christmas, Winter"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Rose pink wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "An incredibly delicate and sophisticated romantic wreath, created for those who love delicate pastel accents. The composition consists of luxurious silk roses of powdery pink shades that look like they are alive, and is complemented by small inflorescences and soft greenery. Such a wreath will be a wonderful addition to the interior of the bedroom, living room or an exquisite decor for festive events, photo zones and gifts.",
+      "price": "1200 UAH",
+      "img": "/collected-wreaths/5.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium textile roses, decorative greenery, reliable base",
+      "Color: powdery pink, pastel",
+      "Style: Romantic, Provence"
+      ]
+    },
+   {
+      "id": 9,
+      "title": "Cotton wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "An incredibly cozy and textured wreath, featuring airy natural cotton bolls as its centerpiece. Soft white accents blend harmoniously with the natural base, creating a sense of warmth, purity, and tranquility. This wreath is a perfect example of modern Scandinavian style or 'hygge' decor; it suits any season beautifully and adds a touch of softness to your interior.",
+      "price": "950 UAH",
+      "img": "/collected-wreaths/1.webp",
+      "features": [
+        "Diameter: 30 cm",
+        "Material: 100% natural cotton, dried twigs, eco-friendly base",
+        "Style: Scandinavian (Scandi), Hygge, Minimalism",
+        "Benefits: hypoallergenic materials, retains its appearance over time"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Burgundy peony wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "A deep wreath with lush burgundy peonies. This composition catches the eye thanks to the rich wine shade of the petals and the realistic texture of premium flowers. The wreath is harmoniously complemented by dark greenery and thin branches, which creates a voluminous, rich look. It will become a bold and elegant accent in the interior, adding a touch of luxury and sophistication to it.",
+      "price": "950 UAH",
+      "img": "/collected-wreaths/4.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium quality textile peonies, decorative branches, natural base",
+      "Color: deep burgundy, wine, dark green",
+      "Style: Classic, Elegant, Boho-chic"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Hortensia wreath",
+      "desc": "Size: 40 cm",
+      "full_desc": "A luxurious and voluminous interior wreath, the main decoration of which is incredibly lush hydrangea inflorescences. Due to the increased diameter of 40 cm, this product looks extremely impressive and can become the central element of the decor in your living room, hallway or on the front door. The delicate texture of the petals and the harmonious combination of shades create a feeling of freshness of a blooming garden.",
+      "price": "1100 UAH",
+      "img": "/collected-wreaths/6.webp",
+      "features": [
+      "Diameter: 40 cm",
+      "Material: realistic silk hydrangeas, decorative greenery, vine base",
+      "Style: Provence, Modern Classic",
+      "Purpose: for spacious rooms, large doors or festive photozones"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Prettiness wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "An incredibly cute and charming decorative wreath, the name of which speaks for itself. This composition is created to bring a smile and add a special elegance to the space. It harmoniously combines delicate small berries and light green accents on a strong natural base. An ideal choice for refreshing the interior or making a pleasant, aesthetic gift to a loved one.",
+      "price": "1100 UAH",
+      "img": "/collected-wreaths/8.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: premium quality combined berries, floral decor, natural vine",
+      "Style: Quartra, Shabby chic, Modern romance",
+      "Feature: universal pastel a design that fits any season"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Eucalyptus wreath",
+      "desc": "Size: 30 cm",
+      "price": "1400 UAH",
+      "img": "/collected-wreaths/9.webp",
+      "full_desc": "An interior wreath made entirely of lush eucalyptus branches. Its noble matte green-ash shade looks extremely fresh and modern. This composition will fit perfectly into minimalist spaces, Scandinavian interiors or lofts. The wreath adds natural lightness and sophisticated aesthetics to the room, while remaining a discreet and elegant accent.",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: high-quality 3D eucalyptus (maximum texture realism), solid base",
+      "Color: ash green, sage",
+      "Style: Scandinavian minimalism, Loft, Boho-urban"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Esthetic wreath with dried flower",
+      "desc": "Size: 40 cm",
+      "full_desc": "An incredible work of floristic art is a large aesthetic wreath made of natural dried flowers. Thanks to its solid diameter of 40 cm and weightless, airy structure, it looks like a real interior painting. The composition is woven from delicate dried flowers, spikelets and natural herbs that retain their beauty for years without requiring care. ",
+      "price": "1250 UAH",
+      "img": "/collected-wreaths/2.webp",
+      "features": [
+      "Diameter: 40 cm ",
+      "Material: 100% natural stabilized dried flowers, cereal herbs, vine base",
+      "Style: Boho-chic (Boho), Eco-aesthetics, Rustic",
+      "The advantage: timeless decor that will never fade or lose its relevance"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Winter wood wreath",
+      "desc": "Size: 30 cm",
+      "full_desc": "A cozy winter wreath in a forest style, combining the warmth of natural wood and the magic of festive evenings. The composition is created on a textured wooden base, decorated with selected forest cones, decorative twigs and delicate winter accents. This decor looks very authentic and fills the house with special peace, harmony and reminds of warm evenings by the fireplace.",
+      "price": "1100 UAH",
+      "img": "/collected-wreaths/10.webp",
+      "features": [
+      "Diameter: 30 cm",
+      "Material: natural wooden elements, cones, eco-decor, strong base",
+      "Style: Forest eco-style, Rustic, Hygge",
+      "Theme: Winter, Christmas, Cozy Home"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Forest cones wreath",
+      "desc": "Size: 35 cm",
+      "full_desc": "Incredibly textured and rich interior wreath, made entirely of selected forest cones. The composition is 35 cm in diameter, which makes it a noticeable and at the same time neat accent on the wall or front door. Natural shapes, light gradients of brown shades and the texture of a real forest create a feeling of primordial harmony with nature. This wreath will be an ideal option for a cozy autumn-winter decor.",
+      "price": "950 UAH",
+      "img": "/collected-wreaths/3.webp",
+      "features": [
+      "Diameter: 35 cm",
+      "Material: 100% natural forest cones of different sizes, reliable eco-base",
+      "Style: Eco-style, Forest aesthetics",
+      "Advantages: solid construction, durable natural materials"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Lavender wreath",
+      "desc": "Size: 35 cm",
+      "full_desc": "An exquisite and incredibly delicate interior wreath, inspired by the endless lavender fields of Provence. Thanks to the harmonious combination of delicate lilac inflorescences and realistic greenery on a natural vine, this product gives a feeling of peace, lightness and comfort. It will be a wonderful decoration for both the walls of a bedroom or living room, and for the front door, adding a sophisticated Mediterranean charm to the space.",
+      "price": "1100 UAH",
+      "img": "/collected-wreaths/7.webp",
+      "features": [
+      "Diameter: 35 cm",
+      "Material: premium quality textile lavender (3D effect), decorative greenery, vine base",
+      "Color: lavender, ash green",
+      "Style: Provence, French Country, Mediterranean"
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "id": 18,
+      "title": "Orchid branch",
+      "desc": "Length: 50 cm",
+      "full_desc": "An elegant decorative orchid branch. With a length of 50 cm, it looks stunning in tall vases—either as a standalone minimalist accent or as a luxurious base for custom floral arrangements. The petal texture faithfully replicates the delicate feel of a real flower, yet the piece requires no complex maintenance and will delight you with its exquisite beauty every day.",
+      "price": "180 UAH",
+      "img": "/branches/5.webp",
+      "features": [
+        "Length: 50 cm",
+        "Material: high-quality silk with a latex coating, flexible stem",
+        "Style: Modern, Minimalist, Elegant",
+        "Benefits: the stem is easy to bend and trim to fit the desired vase height"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Winter barberry",
+      "desc": "Length: 30 cm",
+      "full_desc": "A bright and festive decorative branch of winter barberry, strewn with juicy white berries. Thanks to its compact length of 30 cm, it is an ideal element for filling Christmas vases, decorating a festive table or using as an accent in winter wreaths and compositions. The shine of the berries creates a wonderful contrast with pine needles or dried flowers, adding a special New Year's mood and dynamics to the interior.",
+      "price": "140 UAH",
+      "img": "/branches/1.webp",
+      "features": [
+      "Length: 30 cm",
+      "Material: glossy eco-plastic (imitation of ripe berries), flexible wire base",
+      "Color: white, kaleidoscope of winter shine",
+      "Theme: Winter, New Year, Christmas decor"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Gypsophila branch",
+      "desc": "Length: 40 cm",
+      "full_desc": "An incredibly light, airy and elegant decorative branch of gypsophila. Thanks to its lush inflorescences of small white flowers, it resembles a weightless cloud. The optimal length of 40 cm makes it a universal element: several such branches in a minimalist vase will create a delicate independent bouquet, and in combination with other flowers they will add volume and texture to any floral arrangement. ",
+      "price": "190 UAH",
+      "img": "/branches/2.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: premium quality textile, flexible and realistic stem",
+      "Color: classic white, soft green",
+      "Style: Minimalism, Scandinavian, Wedding aesthetics"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Classic Barberry",
+      "desc": "Length: 50 cm",
+      "full_desc": "An elegant, decorative classic barberry branch (50 cm long), designed to add vibrant, dynamic accents to your interior. Its graceful clusters of richly colored berries and flexible, realistic stem make it an ideal choice for tall vases, interior bouquets, or styling cozy corners of your home.",
+      "price": "100 UAH",
+      "img": "/branches/3.webp",
+      "features": [
+        "Length: 50 cm (extended format for tall vases)",
+        "Material: high-quality eco-plastic with a protective coating, flexible base",
+        "Color: deep classic red",
+        "Usage: versatile all-season decor, floral arrangements"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Gold bead branch",
+      "desc": "Length: 50 cm",
+      "full_desc": "A luxurious decorative branch adorned with exquisite gold beads that shimmer in the light. With its impressive 50 cm length and flexible structure, it serves as an ideal accent for festive interior décor. The branch looks stunning in tall vases and adds a touch of elegant sparkle to evergreen Christmas arrangements; it can also be used to decorate the Christmas tree or a holiday table, creating a truly magical atmosphere.",
+      "price": "120 UAH",
+      "img": "/branches/8.webp",
+      "features": [
+        "Length: 50 cm",
+        "Material: metallic decorative beads, sturdy and flexible wire base",
+        "Color: glossy gold",
+        "Theme: Christmas, New Year"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Pink eucalyptus leaves",
+      "desc": "Length: 70 cm",
+      "full_desc": "A unique and incredibly stylish decorative eucalyptus branch in an exclusive soft pink shade. Thanks to its impressive length of 70 cm, it is designed for tall floor or table vases and is able to independently transform the space. An ideal choice for a bedroom, beauty zones or creating elegant romantic photo zones.",
+      "price": "150 UAH",
+      "img": "/branches/6.webp",
+      "features": [
+      "Length: 70 cm (maximum high format)",
+      "Material: high-quality silky plastic with a matte effect, flexible strong stem",
+      "Color: powder pink, pastel",
+      "Style: Modern glamour, Scandinavian pastel"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Dried eucalyptus branch",
+      "desc": "Length: 80 cm",
+      "full_desc": "Incredibly textured and tall decorative branch of dried eucalyptus. Ideal for massive floor vases and large-scale floral installations. Delicate matte shade and realistic texture of leaves perfectly recreate the aesthetics of real dried eucalyptus. This branch will bring natural harmony to the space and will become a key element of modern eco-design.",
+      "price": "110 UAH",
+      "img": "/branches/7.webp",
+      "features": [
+      "Length: 80 cm",
+      "Material: textured matte eco-material with dried flower texture, reinforced flexible stem",
+      "Color: natural powdery, authentic dried",
+      "Style: Eco-aesthetics, Modern minimalism"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "White lily branch",
+      "desc": "Length: 30 cm",
+      "full_desc": "A delicate and incredibly refined decorative white lily branch. The snow-white petals, featuring subtle textural nuances, look fresh and natural—as if just picked from the garden. This branch makes a wonderful decoration for small tabletop vases, an elegant accent for a coffee table, or a romantic addition to festive arrangements.",
+      "price": "220 UAH",
+      "img": "/branches/4.webp",
+      "features": [
+        "Length: 30 cm",
+        "Material: Premium-quality silk with a realistic matte petal finish; flexible stem",
+        "Color: Classic snow-white",
+        "Style: Classic, Elegant, Wedding decor"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Cherry leaf branch",
+      "desc": "Length: 60 cm",
+      "full_desc": "Lush and extremely realistic decorative branch. The rich golden color of the leaves with detailed veins and flexible structure allow you to easily model the direction of the branches. It is perfect for creating voluminous summer bouquets, will refresh any corner of the room and add juicy natural colors to the interior.",
+      "price": "130 UAH",
+      "img": "/branches/9.webp",
+      "features": [
+      "Length: 60 cm",
+      "Material: high-quality 3D plastic with a silky texture, flexible rubber stem",
+      "Color: elegant gold",
+      "Purpose: summer interior decor, creating volume in large compositions"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Gold rose branch",
+      "desc": "Length: 60 cm",
+      "full_desc": "An exquisite and luxurious decorative rose branch. Thanks to its solid length of 60 cm and elegant branches, it looks like a real work of art. The metallized coating of the leaves gracefully reflects light, creating a magical shimmer. This branch will be an ideal choice for creating accent New Year's and holiday compositions, adding noble shine, glamorous chic and special solemnity to the interior.",
+      "price": "150 UAH",
+      "img": "/branches/10.webp",
+      "features": [
+      "Length: 60 cm",
+      "Material: textured textile and eco-plastic with metallized gold spraying, flexible base",
+      "Color: classic shining gold",
+      "Theme: Holiday decor, Evening Glamour"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Hydrangea branch",
+      "desc": "Length: 70 cm",
+      "full_desc": "An incredibly lush and voluminous decorative hydrangea branch that instantly catches the eye. Textured petals with soft transitions of shades and large green leaves look as natural as possible. This hydrangea will add special sophistication, French charm and a feeling of a blooming garden to the interior at any time of the year.",
+      "price": "100 UAH",
+      "img": "/branches/11.webp",
+      "features": [
+      "Length: 70 cm",
+      "Material: premium textile with a silky texture, flexible rubber stem",
+      "Advantage: large volume, which allows you to easily fill the space in the composition",
+      "Style: Classic, Provence, Modern elegance"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Autumn leaves",
+      "desc": "Length: 70 cm",
+      "full_desc": "An incredibly atmospheric decorative branch with lush autumn leaves, which will instantly fill the house with coziness and warmth. The deep palette of crimson, gold and terracotta shades surprisingly realistically recreates the beauty of fading autumn nature. This branch will be an ideal choice for seasonal decor, adding a special hygge-style mood to the interior.",
+      "price": "150 UAH",
+      "img": "/branches/12.webp",
+      "features": [
+      "Length: 70 cm",
+      "Material: dense textile with detailed vein texture, flexible base",
+      "Color: terracotta, crimson, warm gold",
+      "Style: Autumn Eco-Decor, Hygge"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Winter berries",
+      "desc": "Length: 40 cm",
+      "full_desc": "An elegant decorative branch of winter berries 40 cm long, designed to add bright and festive accents to your home. The white color of the berries combined with the graceful branching of the stem creates a wonderful contrast with coniferous branches or dried flowers. This item is a universal element for filling Christmas vases or using as a bright touch in interior wreaths.",
+      "price": "110 UAH",
+      "img": "/branches/13.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: glossy eco-plastic with a protective coating, flexible wire base",
+      "Color: festive white",
+      "Theme: Winter comfort, Christmas and New Year decor"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Silver oak leaves",
+      "desc": "Length: 50 cm",
+      "full_desc": "Exquisite decorative oak branch with noble silver coating. The metallized coating softly reflects light, adding noble shine and discreet luxury to the interior. This branch will be a wonderful accent in winter bouquets, Christmas compositions with coniferous branches or an independent decoration in a laconic vase.",
+      "price": "120 UAH",
+      "img": "/branches/14.webp",
+      "features": [
+      "Length: 50 cm",
+      "Material: textured textile with the effect of metallized coating, flexible durable base",
+      "Color: elegant silver",
+      "Theme: Holiday decor, New Year, Winter elegance"
+      ]
+    }
+
+  ],
+  "driedFlowers": [
+    {
+      "id": 32,
+      "title": "Pampas grass beige",
+      "desc": "Length: 40 cm",
+      "full_desc": "Incredibly cozy and fluffy decorative pampas grass in a universal beige shade. Its soft, airy texture adds visual warmth, lightness and natural harmony to the interior. This dried flower will be a perfect element for creating concise monobouquets or delicate compositions in the boho style.",
+      "price": "120 UAH",
+      "img": "/dried-flowers/1.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural high-quality dried flower with protective treatment against shedding",
+      "Color: natural beige, cream pastel",
+      "Style: Boho, Scandinavian minimalism, Eco-aesthetics"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Pampas grass white",
+      "desc": "Length: 50 cm",
+      "full_desc": "Sophisticated and incredibly fluffy pampas grass in a flawless white color. Airy, light inflorescences look surprisingly delicate, creating a feeling of a weightless cloud. It is ideal for creating monochrome bouquets in modern light interiors, adding special sophistication, texture and cozy eco-aesthetics to the space.",
+      "price": "130 UAH",
+      "img": "/dried-flowers/2.webp",
+      "features": [
+      "Length: 50 cm",
+      "Material: high-quality dried natural dried flowers with special floral spraying",
+      "Color: pure white, milky",
+      "Style: Modern minimalism, Scandinavian, Wedding boho decor"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Pampas grass pink",
+      "desc": "Length: 60 cm",
+      "full_desc": "Trendy and incredibly charming pampas grass in a soft pink pastel shade. The inflorescences look very airy and delicate, adding a romantic mood and visual softness to the space. This dried flower is ideal for creating sophisticated accents in the bedroom, children's room, beauty studios or for decorating original modern compositions in the boho-chic style.",
+      "price": "140 UAH",
+      "img": "/dried-flowers/3.webp",
+      "features": [
+      "Length: 60 cm",
+      "Material: premium quality natural dried flower with safe coloring and protection against shedding",
+      "Color: powder pink, pastel",
+      "Style: Romantic boho, Modern glamour, Scandinavian pastel"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Dried Broom Bloom",
+      "desc": "Length: 70 cm",
+      "full_desc": "Incredibly delicate and airy dried Broom Bloom, resembling a weightless natural cloud. Its elegant texture perfectly fills the space in large floor or table vases, adding lightness, sophistication and depth to bouquets. It combines perfectly with pampas grass and other types of dried flowers.",
+      "price": "170 UAH",
+      "img": "/dried-flowers/4.webp",
+      "features": [
+      "Length: 70 cm",
+      "Material: natural high-quality dried and stabilized dried flower",
+      "Texture: small-flowered, branched, cloud-like",
+      "Style: Eco-aesthetics, Rustic, Modern interior floristry"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Golden strelitzia",
+      "desc": "Length: 60 cm",
+      "full_desc": "Exotic and incredibly graphic decorative branch of strelitzia in a luxurious gold finish. Metallic spraying exquisitely emphasizes the bold lines and texture of the dried flower, turning it into a work of modern art. The ideal choice for avant-garde compositions, bold interior solutions and adding noble shine to the space.",
+      "price": "120 UAH",
+      "img": "/dried-flowers/5.webp",
+      "features": [
+      "Length: 60 cm",
+      "Material: natural dried flower with dense texture and durable gold coating",
+      "Shape: exotic, geometric, graphic",
+      "Style: Art Deco, Modern glamour, Avant-garde minimalism"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Lagurus blue dried flowers",
+      "desc": "Length: 40 cm",
+      "full_desc": "A delicate and incredibly cute dried flower of Lagurus, which is often called 'bunny tails' for its soft, fluffy inflorescences. This dried flower adds pleasant texture, playfulness and volume to compositions. Lagurus looks great both in independent small monobouquets in laconic ceramic vases, and in combination with pampas grass or cotton.",
+      "price": "130 UAH",
+      "img": "/dried-flowers/6.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flower with a silky fluffy texture and resistant dyeing",
+      "Color: soft blue",
+      "Style: Eco-modern, Creative boho, Modern interior accent"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Lagurus tea rose dried flowers",
+      "desc": "Length: 40 cm",
+      "full_desc": "A refined and incredibly delicate dried Lagurus flower in an exquisite shade of tea rose. Soft, fluffy inflorescences 40 cm long have a delicate pastel color with a slight powdery undertone. It combines perfectly with white pampas grass, broom bloom and other natural materials, and is also an impeccable choice for creating discreet but spectacular monobouquets for the bedroom or living room.",
+      "price": "130 UAH",
+      "img": "/dried-flowers/10.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flower with a signature fluffy texture and persistent delicate coloring",
+      "Color: tea rose, soft pink pastel",
+      "Style: Romantic Boho, Provence"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Lagurus purple dried flowers",
+      "desc": "Length: 40 cm",
+      "full_desc": "A mysterious and expressive dried flower of Lagurus in a delicate purple hue. Its soft, silky inflorescences 40 cm long attract attention with their rich palette, reminiscent of evening twilight or blooming lavender fields. Purple Lagurus goes well with silver or white decor elements, creating exquisite and contrasting floral ensembles for a modern interior.",
+      "price": "130 UAH",
+      "img": "/dried-flowers/8.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flower with fluffy texture",
+      "Color: delicate purple",
+      "Style: Modern interior accent, Eco-modern, Creative floristry"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Lagurus beige-purple dried flowers",
+      "desc": "Length: 40 cm",
+      "full_desc": "Exclusive and incredibly stylish dried lagurus flowers in a beige-purple mix. The peculiarity of this item is the soft transition of shades, where the cozy natural palette of beige is intertwined with delicate notes of muted purple. This dried flower is a self-sufficient element for creating elegant monobouquets, and also perfectly connects bright and neutral colors in complex compositions.",
+      "price": "140 UAH",
+      "img": "/dried-flowers/11.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flower with combined stable coloring",
+      "Color: beige-purple mix, pastel melange",
+      "Style: Creative Eco-Design, Modern Pastel Elegance"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Pink spikelets",
+      "desc": "Length: 40 cm",
+      "full_desc": "Elegant and delicate decorative spikelets in a pastel pink hue. Their striking, defined shape combined with a soft, powdery shade makes them an excellent choice for adding textural accents. They look flawless in clay or clear vases, harmonize beautifully with fluffy Lagurus or pampas grass, and lend a touch of natural sophistication to floral arrangements.",
+      "price": "130 UAH",
+      "img": "/dried-flowers/14.webp",
+      "features": [
+        "Length: 40 cm",
+        "Material: natural, high-quality dried grain spikelets with a durable, delicate dye finish",
+        "Color: soft pink, powdery pastel",
+        "Style: Provence, Country Chic, Romantic Eco-Minimalism"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Lagurus dark-blue dried flowers",
+      "desc": "Length: 40 cm",
+      "full_desc": "Lagurus dried flowers in a deep dark blue shade. Its soft inflorescences 40 cm long have a rich, which adds a special drama, mystery and visual depth to the interior. Dark blue lagurus combines flawlessly with silver decorative elements, white pampas grass or cotton, turning an ordinary bouquet into a stylish work of floristic art.",
+      "price": "140 UAH",
+      "img": "/dried-flowers/7.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flowers with a signature fluffy texture and persistent deep dyeing",
+      "Color: dark blue, indigo",
+      "Style: Eco-modern, Modern minimalism, Contrast interior accent"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Lagurus gray dried flowers",
+      "desc": "Length: 40 cm",
+      "price": "140 UAH",
+      "img": "/dried-flowers/9.webp",
+      "full_desc": "Stylish and ultra-modern dried lagurus in a noble gray shade. This dried flower adds a special graphic, elegance and soft texture to the interior, without overloading the room with unnecessary colors. Gray lagurus is an impeccable base for creating laconic men's bouquets, office decoration, and also combines perfectly with black, white and metallic decor elements.",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flower with a signature fluffy texture",
+      "Color: graphite gray, ash",
+      "Style: Loft, Scandinavian urban minimalism, high-tech"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Blue spikelets",
+      "desc": "Length: 40 cm",
+      "full_desc": "Bright and expressive decorative spikelets in a rich blue color. With a compact length of 40 cm, this dried flower combines the natural graphicity of cereal crops and a bold modern color. They work great as an independent contrasting accent in minimalist vases, and also add depth and clear lines to combined compositions.",
+      "price": "130 UAH",
+      "img": "/dried-flowers/12.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried spikelets with persistent floral coloring",
+      "Color: rich blue, bright cornflower",
+      "Style: Eco-modern, Avant-garde minimalism, Contrasting interior decor"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Lagurus crimson",
+      "desc": "Length: 40 cm",
+      "full_desc": "A spectacular and incredibly expressive dried flower of Lagurus in a juicy crimson shade. This dried flower is ideal for creating bold floral experiments, decorating festive areas, photo shoots or beauty spaces. Crimson Lagurus looks great as a monobouquet in a white or black glossy vase, and also becomes the main color dominant in combined compositions.",
+      "price": "120 UAH",
+      "img": "/dried-flowers/13.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural dried flower with a soft fluffy texture and rich, persistent color",
+      "Color: crimson, deep carmine",
+      "Style: Pop art, Eco-avant-garde, Creative holiday floristry"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Lagurus red dried flower",
+      "desc": "Length: 40 cm",
+      "full_desc": "Lagurus dried flower in a classic rich red color. Soft, elegant inflorescences 40 cm long have a deep, pure shade that instantly attracts attention and becomes the main magnet in the interior. It is perfect for creating contrasting floral ensembles with white, black or gold elements, and also looks incredibly impressive as an independent bold monobouquet.",
+      "price": "150 UAH",
+      "img": "/dried-flowers/16.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: natural premium quality dried flower with persistent rich coloring",
+      "Color: classic red, fiery crimson",
+      "Style: Creative Modern, Dramatic Accent"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "White cotton",
+      "desc": "Length: 40 cm",
+      "full_desc": "Natural, airy and incredibly delicate white cotton boxes on a strong stem. Thanks to its fluffy texture and compact length of 40 cm, this dried flower is the embodiment of home comfort, warmth and purity. Cotton is a universal classic of interior floristry: it looks great as an independent branch in a laconic ceramic vase, and also perfectly complements lagurus, spikelets or pampas grass.",
+      "price": "150 UAH",
+      "img": "/dried-flowers/15.webp",
+      "features": [
+      "Length: 40 cm",
+      "Material: 100% natural inflorescences of organic cotton",
+      "Color: natural snow-white with brown boxes",
+      "Style: Scandinavian Hygge, Eco-minimalism, Rustic, Rustic Boho"
+      ]
+    }
+  ],
+  "flowersHeads": [
+    {
+      "id": 48,
+      "title": "White Peony",
+      "desc": "Diameter: 10 cm",
+      "full_desc": "A delicate and elegant open head of a premium quality white peony. The snow-white shade with a delicate cream heart-shaped reflection gives it a special freshness and elegance. This format is ideal for creating flat interior compositions, decorating holiday tables, making panels, wreaths or using in unique designer craft projects.",
+      "price": "45 UAH",
+      "img": "/flowers/5.webp",
+      "features": [
+      "Head diameter: 10 cm",
+      "Material: high-quality textile with detailed petal texture",
+      "Color: classic white, ivory",
+      "Style: Classic romanticism, Wedding decor, Modern elegance"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Burgundy Peony",
+      "desc": "Diameter: 10 cm",
+      "full_desc": "Luxurious and expressive peony head in a deep, noble burgundy shade. The rich wine color gives the product a special velvety charm, depth and dramatic elegance. This format is an ideal choice for creating contrasting interior accents, decorating autumn or wedding photo zones, table decor, as well as for various floral collages and needlework.",
+      "price": "45 UAH",
+      "img": "/flowers/6.webp",
+      "features": [
+      "Head diameter: 10 cm",
+      "Material: premium textile with realistic texture of each petal",
+      "Color: deep burgundy, wine, burgundy",
+      "Style: Classic romanticism, Dramatic chic, Baroque elegance"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Round burgundy Peony",
+      "desc": "Diameter: 10 cm",
+      "full_desc": "A luxurious burgundy peony head, distinguished by its exquisite, perfectly rounded spherical shape. Thanks to the densely packed inner petals with a diameter of 10 cm, the flower imitates the noble half-opened bud of an English rose-shaped peony. ]This round head format is ideal for creating dense floral arrangements, lush interior wreaths, festive table decoration and exquisite wedding decor.",
+      "price": "45 UAH",
+      "img": "/flowers/7.webp",
+      "features": [
+      "Head diameter: 10 cm",
+      "Material: high-quality dense textile",
+      "Color: deep burgundy, rich burgundy",
+      "Style: English classic, Floristic chic"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Burgundy Dahlia",
+      "desc": "Diameter: 5 cm",
+      "full_desc": "A graceful dahlia head in a deep burgundy shade. Thanks to its compact diameter of 5 cm and needle-like geometric structure of the petals, this flower looks very neat and detailed. The small size makes this dahlia an ideal element for filling the space between larger buds, creating detailed flower rims, table arrangements or decorating gift packages.",
+      "price": "30 UAH",
+      "img": "/flowers/8.webp",
+      "features": [
+      "Head diameter: 5 cm",
+      "Material: high-quality textile with clear figured embossing of dahlia petals",
+      "Color: deep burgundy, burgundy",
+      "Style: Classic autumn chic, Creative handmade"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "White anemone",
+      "desc": "Diameter: 5 cm",
+      "full_desc": "A graceful white anemone head with a bright and graphic character. With a neat diameter of 5 cm, the flower attracts attention with its signature contrast: soft white, silky petals surround a distinctive dark core. The compact size is suitable for creating detailed floral arrangements, wedding boutonniere, exquisite head wreaths or accent table decor.",
+      "price": "40 UAH",
+      "img": "/flowers/9.webp",
+      "features": [
+      "Head diameter: 5 cm",
+      "Material: lightweight textile with a delicate petal texture and a detailed contrasting center",
+      "Color: pure white with a black accent in the center",
+      "Style: Graphic minimalism, French romanticism"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Rose beige",
+      "desc": "Diameter: 5 cm",
+      "full_desc": "A classic rose head in a sophisticated pastel beige shade. Neutral beige color makes it a universal base for any floristic palette. Such a rose is ideal for creating delicate wedding compositions, filling eco-wreaths, decorating photo frames, holiday tables and making interior accessories in the style of minimalism.",
+      "price": "30 UAH",
+      "img": "/flowers/10.webp",
+      "features": [
+      "Head diameter: 5 cm ",
+      "Material: dense high-quality textile that perfectly retains the shape of the petals",
+      "Color: pastel beige, delicate cream",
+      "Style: Nude minimalism, Classic romanticism, Wedding classics"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Rose creamy beige",
+      "desc": "Diameter: 12 cm",
+      "full_desc": "Incredibly lush and luxurious head of a large rose in a delicate creamy beige shade. Thanks to its diameter of 12 cm and deep, multi-layered structure of realistic petals, this flower looks as voluminous as possible. The soft gradient creates the effect of a living, freshly cut flower. The large format makes it a self-sufficient element for large interior vases, photo zones and wedding arches.",
+      "price": "30 UAH",
+      "img": "/flowers/3.webp",
+      "features": [
+      "Head diameter: 12 cm",
+      "Material: premium quality textile with a special coating for the natural look of the petals",
+      "Color: creamy beige",
+      "Style: Royal romanticism, Classic wedding chic"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Rose creamy pink",
+      "desc": "Diameter: 15 cm",
+      "full_desc": "A gigantic, incredibly luxurious rose head in a sophisticated creamy pink design. Numerous dense, detailed petals create volume, and the transition from a warm creamy shade at the base to a delicate blush pink at the tips gives the flower a special depth and realism. An ideal self-sufficient accent for decorating projects, wall panels, festive arches and wedding decoration.",
+      "price": "40 UAH",
+      "img": "/flowers/4.webp",
+      "features": [
+      "Head diameter: 15 cm",
+      "Material: high-quality dense textile",
+      "Color: creamy pink, pastel powdery with a creamy undertone",
+      "Style: Romantic luxury, Large-scale holiday decor"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Lilac",
+      "desc": "Length: 12 cm",
+      "full_desc": "An elegant lilac sprig that captivates with its detailed and lush texture. The 12 cm long blossom cluster consists of numerous small, meticulously crafted florets, creating a voluminous and realistic bunch. This piece is ideal for creating dimensional floral arrangements and decorating Easter or spring wreaths where a fine, textured blossom look is desired.",
+      "price": "50 UAH",
+      "img": "/flowers/13.webp",
+      "features": [
+        "Blossom length: 12 cm",
+        "Material: high-quality blended textile with detailed rendering of each tiny flower",
+        "Color: soft lilac with lavender undertones",
+        "Style: Provence, Spring Romantic, Eco-style"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "White orchid",
+      "desc": "Diameter: 8 cm",
+      "full_desc": "A refined and incredibly elegant head of a white orchid, embodying modern laconicism and exotic chic. The orchid is perfect for decorating minimalist floating compositions in water, wedding hairstyles, decorating festive tables, mirrors, as well as for creating stylish interior panels in a tropical or oriental style.",
+      "price": "40 UAH",
+      "img": "/flowers/12.webp",
+      "features": [
+      "Head diameter: 8 cm",
+      "Material: dense latex textile with a delicate silky coating",
+      "Color: snow-white with elegant gold accents in the core",
+      "Style: Minimalist luxury, Tropical modern, Asian zen decor, Wedding minimalism"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Daisy",
+      "desc": "Diameter: 3 cm",
+      "price": "20 UAH",
+      "img": "/flowers/11.webp",
+      "full_desc": "A cute and cheerful miniature head of a field daisy. With a neat diameter of only 3 cm, this flower captivates with its simplicity, natural lightness and sunny mood. Due to its tiny format, the daisy is an ideal choice for filling the smallest spaces in compositions, creating summer wreaths, decorating children's headbands, hairpins, as well as for small handmade.",
+      "features": [
+      "Head diameter: 3 cm",
+      "Material: lightweight textile with a clear plastic or flocked yellow core",
+      "Color: classic white with a sunny yellow center",
+      "Style: Country, Eco-naturalism, Rustic, Field freshness"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Mini-peonies",
+      "desc": "Diameter: 5 cm",
+      "full_desc": "A delicate and elegant mini-peony, which is the perfect compromise between volume and compactness. This midi format is extremely popular among florists, as it is ideal for creating harmonious tabletop compositions, filling the middle plans in large bouquets, decorating delicate headbands and various festive interior decor.",
+      "price": "30 UAH",
+      "img": "/flowers/14.webp",
+      "features": [
+      "Head diameter: 5 cm",
+      "Material: light silky premium quality textile with excellent petal shape stability",
+      "Color: pastel classic shade of an open peony",
+      "Style: Classic romanticism, French Provence, Wedding midi-decor"
+      ]
+    }
+
+  ],
+  "butterflies": [
+    {
+      "id": 60,
+      "title": "Burgundy butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "A sophisticated decorative butterfly in a deep and noble burgundy shade. The rich wine color of the wings with a delicate texture makes it a noticeable and stylish accent. The butterfly is ideal for attaching to stems of dried flowers, lilac or peony branches, decorating holiday wreaths, creating thematic photo zones and original gift wrapping.",
+      "price": "25 UAH",
+      "img": "/butterflies/1.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: thick textured textile that holds the shape of the wings well",
+      "Color: deep burgundy, noble burgundy",
+      "Style: Dramatic chic, Fairytale decor, Accent floristry"
+      ]
+    },
+    {
+      "id": 61,
+      "title": "White-gold butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "Incredibly elegant and sophisticated decorative butterfly in white-gold design. The pure white color of the wings in combination with delicate gold spraying or thin graphic patterns creates the effect of soft shimmer. This accessory is ideal for creating a festive atmosphere, wedding decor.",
+      "price": "25 UAH",
+      "img": "/butterflies/2.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: light flexible material with neat metallic gold embossing",
+      "Color: classic white with a sophisticated gold outline or lurex",
+      "Style: Wedding chic, Festive glamour, Fabulous minimalism, Elegant modern"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "White butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "A delicate and weightless decorative butterfly in classic white. The pure white shade makes it an absolutely universal accessory that will harmoniously fit into any floral or color scheme - from bright contrasting bouquets to delicate pastel compositions.",
+      "price": "25 UAH",
+      "img": "/butterflies/3.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: thin, light translucent material that creates the effect of weightlessness of the wings",
+      "Color: pure matte white",
+      "Style: Minimalist romanticism, Wedding classics, Light eco-decor"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "White-black butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "Stylish and graphic decorative butterfly in an expressive white-black design. Such a bold and at the same time classic combination makes it an ideal element for modern interior solutions, design of monochrome photo zones, as well as for adding clear visual accents to delicate or bright floral arrangements.",
+      "price": "25 UAH",
+      "img": "/butterflies/4.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: lightweight flexible plastic with clear and high-quality two-tone printing",
+      "Color: contrasting white with expressive black pattern",
+      "Style: Graphic modern, Modern minimalism, Art deco, Contrast floristry"
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Lilac butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "A delicate and incredibly romantic decorative butterfly in a sophisticated lilac shade. ] The soft color of the wings creates an atmosphere of a spring garden, comfort and Provencal peace. The butterfly will be an ideal addition to spring and summer floral arrangements, decoration of children's parties, decoration of textiles, curtains, holiday wreaths or as an accent element when wrapping gifts for creative individuals.",
+      "price": "25 UAH",
+      "img": "/butterflies/5.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: thin translucent material",
+      "Color: pastel lilac, delicate lavender",
+      "Style: Provence, Spring romanticism, Fabulous shabby chic"
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Pink butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "The delicate pastel pink color of the wings makes it a great addition to delicate floral arrangements, children's photo zones, festive room decor or wedding accessories. It combines well with both white and rich berry or burgundy tones, adding volume and a sense of dynamics to the compositions.",
+      "price": "25 UAH",
+      "img": "/butterflies/6.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: light flexible material with a silky texture of the wings",
+      "Color: pastel pink, powdery nymph",
+      "Style: Romantic shabby chic, Wedding pastel decor, Fairytale children's style"
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Iridescent butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "A mesmerizing decorative butterfly with a fantastic holographic effect. With a classic size of 7 cm, this accessory is a real chameleon in the world of decor. It will be an ideal choice for ultra-modern photo zones, fabulous holiday installations, decorating extraordinary floral arrangements and adding a wow effect to any creative project.",
+      "price": "25 UAH",
+      "img": "/butterflies/7.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: special flexible plastic with holographic application and glossy finish",
+      "Color: pearlescent chameleon",
+      "Style: Futuristic chic, Fairytale glamour, Modern pop art, Enchanting decor"
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Turquoise butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "A bright and incredibly refreshing decorative butterfly in an expressive turquoise shade. The rich color of the sea wave adds depth, coolness and sunny summer mood to the decor. It will become an accent in delicate white or cream bouquets, will perfectly complement modern photo zones in a marine or exotic style, and is also suitable for decorating interior wreaths.",
+      "price": "25 UAH",
+      "img": "/butterflies/8.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: lightweight flexible material with high-quality saturated pigment, resistant to fading",
+      "Color: bright turquoise, sea wave color",
+      "Style: Tropical modern, Summer expressive decor, Contrast floristry"
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Blue butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "Incredibly deep and mesmerizing decorative butterfly in a rich blue shade. The noble blue color adds special magnetism, depth and evening mystery to floral arrangements. ",
+      "price": "25 UAH",
+      "img": "/butterflies/9.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: lightweight flexible material with rich, fade-resistant pigment",
+      "Color: royal blue, deep ultramarine",
+      "Style: Noble modern, Contrast floristry, Fabulous evening decor"
+      ]
+    },
+    {
+      "id": 69,
+      "title": "Green butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "A refreshing and harmonious decorative butterfly in a juicy green shade. The pleasant green color of the wings allows it to perfectly mimic living leaves in bouquets or, conversely, become a stylish accent in monochrome compositions. This is an ideal choice for eco-weddings, decorating Easter and spring wreaths, as well as for fixing on indoor plants to create a cozy, lively mood.",
+      "price": "25 UAH",
+      "img": "/butterflies/11.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: light flexible plastic or dense textile with imitation of natural veins",
+      "Color: grassy green",
+      "Style: Eco-naturalism, Spring renewal, Forest fairy tale decor"
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Yellow butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "An incredibly bright, sunny and cheerful decorative butterfly that radiates warmth and positive energy. This is an ideal choice for creating bright children's photo zones, decorating spring and summer interior wreaths, festive table decoration and gift wrapping that should cause a sincere smile.",
+      "price": "25 UAH",
+      "img": "/butterflies/12.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: lightweight flexible material with rich and fade-resistant solar pigment",
+      "Color: bright yellow, warm sunny shade",
+      "Style: Summer expressive decor, Cheerful country, Contrasting floristry"
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Blue-yellow butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "Incredibly beautiful and deeply symbolic decorative butterfly in patriotic blue-yellow colors. It will be an ideal choice for creating thematic patriotic decor, decorating festive wreaths, decorating special bouquets, photo zones, as well as as a soulful accent in the interior of a home or office.",
+      "price": "25 UAH",
+      "img": "/butterflies/13.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: lightweight flexible material with high-quality two-color printing and clear shade boundaries",
+      "Color: patriotic blue-yellow double gradient",
+      "Style: Patriotic modern, Symbolic decor, Contrasting accent floristry"
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Light-purple butterfly",
+      "desc": "Size: 7 cm",
+      "full_desc": "The light purple tone looks very noble and at the same time unobtrusive. It goes well with pink, white, silver, as well as contrasting yellow elements of floristry. Ideal for decorating holiday bouquets, creating airy interior decor, photo zones or elegant design of gift boxes.",
+      "price": "25 UAH",
+      "img": "/butterflies/10.webp",
+      "features": [
+      "Size: 7 cm",
+      "Material: light flexible plastic or textured silky textile, resistant to creasing",
+      "Color: light purple, delicate violet",
+      "Style: Charming romanticism, Elegant pastel decor, Fairytale floristry"
+      ]
+    }
+  ],
+  "ribbons": [
+    {
+      "id": 73,
+      "title": "Gold thread",
+      "desc": "Width: 0.3 cm",
+      "full_desc": "Gold lurex thread, created to add jewelry precision and luxurious shine to any creative project. With a width of 0.3 cm, this cord is strong, but at the same time flexible and docile in work. Suitable for tying mini-bouquets, fixing wedding invitations, hanging New Year's toys, creating elegant bows, as well as for finishing craft gift boxes.",
+      "price": "15 UAH",
+      "img": "/ribbons/3.webp",
+      "features": [
+      "Width: 0.3 cm",
+      "Material: strong flexible cord with dense metallized lurex coating",
+      "Color: gold with intense shine",
+      "Style: Festive minimalism, Premium Chic, Wedding Classics, Christmas Decor"
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Cream organza ribbon",
+      "desc": "Width: 2 cm",
+      "full_desc": "A delicate and translucent organza ribbon in a soft cream shade. This ribbon is a classic choice for wedding floristry, tying delicate pastel bouquets, decorating bonbonnieres, decorating candles, as well as for aesthetic gift decoration in the style of shabby chic or vintage.",
+      "price": "15 UAH",
+      "img": "/ribbons/4.webp",
+      "features": [
+      "Width: 2 cm",
+      "Material: thin but durable translucent organza with neatly finished edges",
+      "Color: warm cream, ivory",
+      "Style: Wedding romanticism, Airy classics, French Provence, Vintage decor"
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Khaki organza ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": "A wide, translucent organza ribbon in a deep and noble shade of khaki. The complex earthy-olive color of khaki adds a special natural aesthetic, restraint and trendy style to the decor. This ribbon is an ideal choice for wrapping gifts in a natural range, decorating floral arrangements in an eco-style.",
+      "price": "25 UAH",
+      "img": "/ribbons/5.webp",
+      "features": [
+      "Width: 5 cm",
+      "Material: translucent organza with high-quality dyeing and stable edge edging",
+      "Color: discreet khaki, natural olive green",
+      "Style: Eco-Naturalism, Modern Boho-Rustic, Scandinavian Minimalism"
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Burgundy organza ribbon",
+      "desc": "Width: 2 cm",
+      "full_desc": "An exquisite translucent organza ribbon in a deep, rich burgundy shade. This ribbon is ideal for adding passionate, dramatic or autumnal accents to floral bouquets, luxurious premium gift packaging, wedding decor in deep marsala tones, as well as for exquisite decoration of festive printing and candles.",
+      "price": "15 UAH",
+      "img": "/ribbons/6.webp",
+      "features": [
+      "Width: 2 cm ",
+      "Material: lightweight but durable translucent organza with a neat side seam fixation",
+      "Color: deep burgundy, wine, burgundy",
+      "Style: Classic premium chic, Gothic romanticism, Autumn floristry, Luxurious wedding"
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Powder organza ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": "Luxurious wide organza ribbon in an incredibly delicate powder shade. The soft pastel pink color of the powder adds special sophistication, girlish fragility and marshmallow lightness to the decor. It will be an impeccable choice for decorating large romantic bouquets, wedding decor, children's parties, as well as for exquisite and aesthetic packaging of premium gifts.",
+      "price": "25 UAH",
+      "img": "/ribbons/7.webp",
+      "features": [
+      "Width: 5 cm",
+      "Material: thin, airy organza with a delicate silky shine and high-quality edging",
+      "Color: delicate powder, pastel pink",
+      "Style: Wedding pastel decor"
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Red organza ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": "Its vibrant red hue instantly draws the eye, adding a touch of festivity, passion, and a celebratory mood to any decor. This ribbon is perfect for romantic Valentine's Day gift wrapping, creating striking contrasts in wedding or event floral arrangements, and crafting vibrant Christmas and New Year decorations.",
+      "price": "25 UAH",
+      "img": "/ribbons/8.webp",
+      "features": [
+        "Width: 5 cm",
+        "Material: Sheer, airy organza with rich, high-quality coloring and a durable edge",
+        "Color: Classic red",
+        "Style: Formal classic, festive expressionism, romantic chic, Christmas decor"
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Powder organza ribbon",
+      "desc": "Width: 2 cm",
+      "full_desc": "The soft pastel pink color of the powder adds a special romance, sophistication and girlish fragility to the decor. This ribbon is ideal for tying small elegant bouquets, decorating wedding printing and invitations, tying tags, as well as for aesthetic finishing packaging of neat gift boxes.",
+      "price": "15 UAH",
+      "img": "/ribbons/10.webp",
+      "features": [
+      "Width: 2 cm",
+      "Material: thin, airy organza with a light silky sheen and a stable edge",
+      "Color: delicate powder, pastel pink",
+      "Style: Romantic shabby chic, Wedding pastel decor, Chamber delicate floristry"
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Pink organza ribbon",
+      "desc": "Width: 2 cm",
+      "full_desc": "The ribbon holds its shape perfectly in small neat bows and knots, without weighing down the overall composition. It will be an ideal choice for decorating spring bouquets with tulips or peonies, wrapping cute gifts, decorating children's parties and creating stylish handmade accessories.",
+      "price": "15 UAH",
+      "img": "/ribbons/11.webp",
+      "features": [
+      "Width: 2 cm ",
+      "Material: light translucent organza with a neatly finished edge",
+      "Color: classic pink, candy pink",
+      "Style: Romantic modern, Playful girlish chic, Spring floristry"
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Chocolate organza ribbon",
+      "desc": "Width: 2 cm",
+      "full_desc": "The warm color of chocolate adds a special sophistication, restraint and expensive finish to compositions and gifts. It is ideal for autumn floristry, packaging craft and gastronomic gifts (especially sweets or coffee sets), as well as for creating stylish interior decor in eco and rustic styles.",
+      "price": "15 UAH",
+      "img": "/ribbons/12.webp",
+      "features": [
+      "Width: 2 cm",
+      "Material: translucent lightweight organza with high-quality, stable dyeing and a stable edge",
+      "Color: deep chocolate, warm brown",
+      "Style: Eco-aesthetics, Cozy rustic, Coffee premium chic"
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Sea wave satin ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": "Incredibly luxurious and dense satin ribbon in a deep, magnetic sea wave color. The dense texture of the satin allows you to form flawless, clear and large bows that perfectly hold volume and enchant with a silky shimmer under the light. It will be an ideal choice for gift wrapping, floral arrangements, wedding decorations in a marine or emerald style, as well as for creating sophisticated interior accents.",
+      "price": "25 UAH",
+      "img": "/ribbons/9.webp",
+      "features": [
+      "Width: 5 cm",
+      "Material: high-quality double-sided satin",
+      "Color: sea wave",
+      "Style: Modern Modern, Royal Classics, Exotic floristry"
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Purple organza ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": "This ribbon perfectly holds its lush shape, adding magical charm and visual volume to the design. It is ideal for creating contrasting accents in festive floristry, packaging special premium gifts, as well as for decorating thematic photo zones and wedding ceremonies in lavender or deep purple tones.",
+      "price": "25 UAH",
+      "img": "/ribbons/13.webp",
+      "features": [
+      "Width: 5 cm",
+      "Material: weightless translucent organza with a delicate silky sheen and high-quality edge",
+      "Color: deep purple, rich purple",
+      "Style: Mysterious romanticism, Magical chic, Festive extravaganza floristry"
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Purple satin ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": " Dense silky satin perfectly holds its shape, allowing you to create flawless, heavy and lush bows with a noble overflow on the folds. This ribbon will be an ideal choice for premium gift wrapping, solemn decoration of large floral arrangements, decoration of wedding halls and creation of elegant handmade accents.",
+      "price": "25 UAH",
+      "img": "/ribbons/14.webp",
+      "features": [
+      "Width: 5 cm",
+      "Material: high-quality satin",
+      "Color: rich purple, deep purple",
+      "Style: Royal classic, Premium chic, Wedding modern, Solemn decor"
+      ]
+    },
+    {
+      "id": 85,
+      "title": "Light-blue satin ribbon",
+      "desc": "Width: 5 cm",
+      "full_desc": "A delicate and elegant satin ribbon in a light sky-blue shade. Silky satin holds its shape perfectly, allowing you to create lush, luxurious bows with a noble shimmer. This ribbon is an ideal choice for spring and winter floristry, the design of delicate bouquets for discharge from the maternity hospital (for boys), wedding decor in the style of 'something blue', as well as for aesthetic gift wrapping in pastel colors.",
+      "price": "25 UAH",
+      "img": "/ribbons/15.webp",
+      "features": [
+      "Width: 5 cm",
+      "Material: high-quality dense satin",
+      "Color: pale blue, sky pastel",
+      "Style: Wedding romanticism, Spring freshness, Pastel Classic"
+      ]
+    }
+  ]
+}
