@@ -6,8 +6,6 @@ import CartSidebar from './components/CartSidebar';
 
 export default function App() {
   const isCartOpen = useCartStore((state) => state.isCartOpen);
-
-  // Блокуємо скрол сторінки, якщо кошик відкритий
   useEffect(() => {
     if (isCartOpen) {
       document.body.style.overflow = 'hidden';
@@ -21,7 +19,6 @@ export default function App() {
     <div className="page-wrapper">
       <Header />
       
-
       <main>
         <Outlet />
       </main>

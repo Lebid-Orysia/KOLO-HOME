@@ -1,0 +1,227 @@
+@use 'variables'as *;
+
+.checkout-page {
+  padding: 40px 0;
+  background-color: $background-color_4;
+
+
+  .checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+    margin-top: 80px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Форма */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: $background-color_4;
+    padding: 25px;
+    border-radius: 4px;
+
+    h3 {
+      font-family: $font-family_1;
+      color: $color_1;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: $font-family_2;
+      @include fz(16);
+
+      &:focus {
+        border-color: $border-color_1;
+        outline: none;
+      }
+    }
+  }
+
+  .checkout-summary {
+    background: $background-color_3;
+    padding: 25px;
+    border-radius: 4px;
+    height: fit-content;
+
+    h3 {
+      font-family: $font-family_1;
+      color: $color_1;
+      margin-bottom: 20px;
+    }
+
+    .cart-items {
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+
+      .cart-item-image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .cart-item-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+          color: $color_9;
+          font-family: $font-family_2;
+          margin: 0;
+        }
+      }
+
+      .quantity-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          padding: 2px 8px;
+          cursor: pointer;
+        }
+      }
+
+      .cart-item-price {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+
+        button {
+          background: none;
+          border: none;
+          color: $color_6;
+          cursor: pointer;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+
+    .total {
+      margin: 20px 0;
+      padding-top: 15px;
+      text-align: right;
+
+      strong {
+        @include fz(20);
+        color: $color_2;
+      }
+    }
+
+    .btn-confirm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color_3;
+      color: $color_8;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $color_2;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      &.disabled {
+        background-color: $color_3;
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; // Більше відступу між розділами
+    background: $background-color_4;
+    padding: 0 25px;
+    border-radius: 8px;
+
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-bottom: 20px;
+      background-color: $background-color_3;
+      border-radius: 4px;
+      padding: 20px;
+    }
+
+    h3 {
+      font-family: $font-family_1;
+      color: $color_1;
+      margin-bottom: 5px;
+      @include fz(18);
+    }
+
+    input,
+    textarea,
+    select {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: $font-family_2;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: $font-family_2;
+      width: 155px;
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.css-13cymwt-control{
+  border-color: $color_5;
+}
+  &:hover{
+  border-color: $color_3 !important; 
+  box-shadow: none;
+}

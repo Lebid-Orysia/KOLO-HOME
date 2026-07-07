@@ -8,6 +8,7 @@ import CategoryProducts from "./pages/CategoryProducts";
 import ProductDetailPage from "./pages/ProductDetailPage"; 
 import App from "./App";
 import ContactsPage from "./pages/ContactsPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 export const router = createHashRouter([
   {
@@ -18,6 +19,7 @@ export const router = createHashRouter([
       { path: 'about', Component: AboutPage },
       { path: 'catalog/:categoryName/:productId', Component: ProductDetailPage },
       { path: 'contacts', Component: ContactsPage },
+      { path: '/KOLO-HOME/checkout', Component: CheckoutPage },
       {
         path: 'catalog',
         Component: CatalogPage,

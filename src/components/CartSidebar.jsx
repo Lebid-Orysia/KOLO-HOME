@@ -1,5 +1,6 @@
 import React from 'react';
 import useCartStore from '../store/useCartStore';
+import { Link } from 'react-router-dom';
 
 const CartSidebar = () => {
   const { cart, isCartOpen, setIsCartOpen, handleUpdateQuantity, handleRemoveFromCart } = useCartStore();
@@ -41,7 +42,7 @@ const CartSidebar = () => {
                   <img
                     src={productImg || `${import.meta.env.BASE_URL}assets/images/placeholder.jpg`}
                     alt={item.title || item.name}
-                    className="cart-sidebar__item-img" 
+                    className="cart-sidebar__item-img"
                   />
 
                   <div className="cart-sidebar__item-info">
@@ -71,9 +72,9 @@ const CartSidebar = () => {
               <span>Total:</span>
               <strong>{totalPrice} UAH</strong>
             </div>
-            <button className="cart-sidebar__checkout-btn">
+            <Link to="/KOLO-HOME/checkout" className="cart-sidebar__checkout-btn" onClick={() => setIsCartOpen(false)}>
               Order Now
-            </button>
+            </Link>
           </div>
         )}
       </div>

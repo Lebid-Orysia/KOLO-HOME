@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-// Твої нові дані Telegram-бота
 const BOT_TOKEN = '8939819824:AAFjKgg7kbRNcf-CydQeIFbHEODgq_AHvNM';
 const CHAT_ID = '-1003789218824';
 
@@ -15,6 +13,11 @@ const ModalFeedback = ({ onClose }) => {
     setTimeout(() => {
       setToast((prev) => ({ ...prev, show: false }));
     }, 2500);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[+]?[\d\s\-()]{9,15}$/;
+    return phoneRegex.test(phone);
   };
 
   const handleInputChange = (field, value) => {
@@ -34,14 +37,18 @@ const ModalFeedback = ({ onClose }) => {
       isFormValid = false;
       newErrors.name = 'Field cannot be empty.';
     }
+    
     if (formData.contact.trim() === '') {
       isFormValid = false;
       newErrors.contact = 'Field cannot be empty.';
+    } else if (!validatePhone(formData.contact)) {
+      isFormValid = false;
+      newErrors.contact = 'Invalid phone format.';
     }
 
     if (!isFormValid) {
       setErrors(newErrors);
-      triggerToast('Fill in the required fields!', 'error');
+      triggerToast('Please correct the errors!', 'error');
       return;
     }
 
@@ -54,25 +61,14 @@ const ModalFeedback = ({ onClose }) => {
       );
 
       if (resp.ok) {
-        const answer = await resp.json();
-        if (answer.ok) {
-          setFormData({ name: '', contact: '', message: '' }); 
-          triggerToast('Data sent successfully!', 'success');
-         
-          setTimeout(() => {
-            onClose();
-          }, 2500);
-        } else {
-          console.error(answer.description);
-          triggerToast('Telegram server error.', 'error');
-        }
+        setFormData({ name: '', contact: '', message: '' });
+        triggerToast('Data sent successfully!', 'success');
+        setTimeout(onClose, 2500);
       } else {
-        console.error('Server response error');
-        triggerToast('Could not contact the server.', 'error');
+        triggerToast('Server error.', 'error');
       }
     } catch (error) {
-      console.error('Fetch error:', error);
-      triggerToast('There is no network connection.', 'error');
+      triggerToast('No connection.', 'error');
     } finally {
       setIsSubmitting(false);
     }
@@ -87,8 +83,6 @@ const ModalFeedback = ({ onClose }) => {
         <p>Leave your contact details, and we’ll create something cozy together!</p>
 
         <form onSubmit={handleSubmit} className="feedback-form">
-          
-          {/* Поле: Name */}
           <div className="form-group">
             <label htmlFor="name">Your name</label>
             <input 
@@ -99,22 +93,23 @@ const ModalFeedback = ({ onClose }) => {
               value={formData.name}
               onChange={(e) => handleInputChange('name', e.target.value)}
             />
-            {errors.name && <span className="input-error-message" style={{ color: 'red', fontSize: '0.8rem', marginTop: '4px' }}>{errors.name}</span>}
+            {errors.name && <span className="input-error-message" style={{ color: 'red' }}>{errors.name}</span>}
           </div>
+
           <div className="form-group">
             <label htmlFor="contact">Phone</label>
             <input 
-              type="number" 
+              type="tel" 
               id="contact" 
               className={errors.contact ? 'input-error' : ''}
               disabled={isSubmitting}
               value={formData.contact}
               onChange={(e) => handleInputChange('contact', e.target.value)}
+              placeholder="+380XXXXXXXXX"
             />
-            {errors.contact && <span className="input-error-message" style={{ color: 'red', fontSize: '0.8rem', marginTop: '4px' }}>{errors.contact}</span>}
+            {errors.contact && <span className="input-error-message" style={{ color: 'red' }}>{errors.contact}</span>}
           </div>
 
-          {/* Поле: Message */}
           <div className="form-group">
             <label htmlFor="message">Your message (optional)</label>
             <textarea 
@@ -131,12 +126,7 @@ const ModalFeedback = ({ onClose }) => {
           </button>
         </form>
 
-
-        {toast.show && (
-          <div className={`my-toast ${toast.type}`}>
-            {toast.message}
-          </div>
-        )}
+        {toast.show && <div className={`my-toast ${toast.type}`}>{toast.message}</div>}
       </div>
     </div>
   );
