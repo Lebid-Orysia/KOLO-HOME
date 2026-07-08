@@ -59,7 +59,8 @@ app.post('/api/warehouses', async (req, res) => {
 app.post('/api/orders', async (req, res) => {
   const { name, phone, city, address, payment, cart } = req.body;
 
-  const cartText = cart.map(item => `${item.title} (${item.quantity} шт.) - ${item.price * item.quantity} UAH`).join('\n');
+  const cartText = cart.map(item => 
+    `${item.name} (${item.quantity} шт.) - ${item.price * item.quantity} UAH`).join('\n');
   const message = `📦 **Нове замовлення!**\n\n👤 Клієнт: ${name}\n📞 Телефон: ${phone}\n📍 Місто: ${city}\n🏢 Адреса: ${address}\n💳 Оплата: ${payment}\n\n🛒 Товари:\n${cartText}`;
 
   try {
