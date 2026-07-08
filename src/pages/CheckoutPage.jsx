@@ -48,6 +48,7 @@ export default function CheckoutPage() {
   };
 
   const confirmOrder = async () => {
+    console.log("Дані кошика перед відправкою:", JSON.stringify(cart, null, 2));
     setIsSubmitting(true);
 
     try {
