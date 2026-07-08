@@ -73,13 +73,9 @@ export default function CheckoutPage() {
   };
 
   const isFormValid = () => {
-    const isBasicInfoValid =
-      formData.name.trim() !== '' &&
-      formData.city !== '' &&
-      formData.address !== '';
-    const isPhoneValid = formData.phone && !formData.phone.includes('_') && formData.phone.length >= 10;
+    return formData.name.trim() !== '' && formData.phone.trim() !== '' &&
+      formData.city !== '' && formData.address !== '';
   };
-
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -114,9 +110,6 @@ export default function CheckoutPage() {
                 onChange={handleInputChange}
                 required
               />
-              {formData.phone.includes('_') && formData.phone.length > 0 && (
-                <p style={{ color: 'red', fontSize: '12px' }}>Please enter the full phone number.</p>
-              )}
             </section>
 
             <section className="form-section">
@@ -200,7 +193,7 @@ export default function CheckoutPage() {
         </div>
       </div>
       {showSuccessModal && <ModalSuccess onClose={() => setShowSuccessModal(false)} />}
-
+      
     </>
   );
 }
