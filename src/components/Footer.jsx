@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="footer__left-map">
           <Link to="/contacts" className="footer__map-link" title="Open full map">
             <img
-              src="/KOLO-HOME/map-screenshot.webp"
+              src="/map-screenshot.webp"
               alt="Map location static look"
               className="footer__map-img"
             />
