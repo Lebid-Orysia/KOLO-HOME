@@ -3,7 +3,6 @@ import { useParams, Link } from 'react-router-dom';
 
 export default function CategoryProducts() {
   const { categoryName } = useParams();
-
   const [productsData, setProductsData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 

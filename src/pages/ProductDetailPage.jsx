@@ -8,7 +8,7 @@ function ProductDetailPage() {
   const { categoryName, productId } = useParams(); 
   const navigate = useNavigate(); 
   const handleAddToCartStore = useCartStore((state) => state.handleAddToCart); 
-
+  
   const [productsData, setProductsData] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [isLoading, setIsLoading] = useState(true);

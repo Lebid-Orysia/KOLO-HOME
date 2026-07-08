@@ -4,7 +4,6 @@
   padding: 40px 0;
   background-color: $background-color_4;
 
-
   .checkout-layout {
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -15,8 +14,6 @@
       grid-template-columns: 1fr;
     }
   }
-
-  /* Форма */
   .checkout-form {
     display: flex;
     flex-direction: column;
@@ -170,7 +167,7 @@
   .checkout-form {
     display: flex;
     flex-direction: column;
-    gap: 50px; // Більше відступу між розділами
+    gap: 50px;
     background: $background-color_4;
     padding: 0 25px;
     border-radius: 8px;
@@ -241,7 +238,7 @@
       transition: 0.2s;
 
       &:checked {
-        border-color: #4CAF50;
+        border-color: $color_2;
 
         &::after {
           content: "";
@@ -251,14 +248,13 @@
           transform: translate(-50%, -50%);
           width: 15px;
           height: 15px;
-          background: #4CAF50;
+          background: $color_2;
           border-radius: 50%;
         }
       }
     }
   }
 }
-
 
 .modal-overlay {
   position: fixed;

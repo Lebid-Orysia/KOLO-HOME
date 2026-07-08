@@ -11,11 +11,9 @@ export default function CheckoutPage() {
   const { cart, handleUpdateQuantity, handleRemoveFromCart, clearCart } = useCartStore();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
-
   const [formData, setFormData] = useState({
     name: '', phone: '', city: '', deliveryType: 'branch', address: '', payment: 'card'
   });
-
   const [cities, setCities] = useState([]);
   const [warehouses, setWarehouses] = useState([]);
 
@@ -48,7 +46,6 @@ export default function CheckoutPage() {
   };
 
   const confirmOrder = async () => {
-    console.log("Дані кошика перед відправкою:", JSON.stringify(cart, null, 2));
     setIsSubmitting(true);
 
     try {

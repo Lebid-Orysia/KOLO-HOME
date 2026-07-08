@@ -9,7 +9,6 @@ export default function CatalogPage() {
     initSidebarScroll();
   }, []);
 
-
   return (
     <>
       <div className="container">

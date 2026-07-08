@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const ModalSuccess = ({ onClose }) => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleOverlayClick = () => {
-    onClose();     
-    navigate('/catalog');  
+    onClose();
+    navigate('/catalog');
   };
 
   return (

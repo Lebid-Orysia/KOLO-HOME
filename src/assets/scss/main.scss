@@ -181,7 +181,6 @@ header {
 /* --- МОБІЛЬНЕ МЕНЮ ТА БУРГЕР --- */
 .burger {
 	display: none;
-	/* За замовчуванням ховаємо */
 	position: relative;
 	width: 30px;
 	height: 22px;
@@ -189,7 +188,6 @@ header {
 	border: none;
 	cursor: pointer;
 	z-index: 2001;
-	/* Ставимо поверх шторки */
 	padding: 0;
 
 	span {
