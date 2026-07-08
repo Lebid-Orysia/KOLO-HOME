@@ -59,7 +59,6 @@ export default function CheckoutPage() {
       if (!response.ok) {
         throw new Error(data.message || 'Помилка при відправці замовлення');
       }
-      console.log("Сервер відповів успішно, намагаюсь відкрити модалку...");
       setShowSuccessModal(true);
       if (typeof clearCart === 'function') {
         clearCart();
@@ -73,10 +72,14 @@ export default function CheckoutPage() {
     }
   };
 
-  const isFormValid = () => {
-    return formData.name.trim() !== '' && formData.phone.trim() !== '' &&
-      formData.city !== '' && formData.address !== '';
+   const isFormValid = () => {
+    const isBasicInfoValid = 
+      formData.name.trim() !== '' &&
+      formData.city !== '' &&
+      formData.address !== '';
+    const isPhoneValid = formData.phone && !formData.phone.includes('_') && formData.phone.length >= 10;
   };
+
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
