@@ -4,7 +4,6 @@ import fetch from 'node-fetch';
 
 const app = express();
 
-// Налаштування
 const API_KEY = process.env.NP_API_KEY;
 const BOT_TOKEN = process.env.VITE_BOT_TOKEN;
 const CHAT_ID = process.env.VITE_CHAT_ID;
