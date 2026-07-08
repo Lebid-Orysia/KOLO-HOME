@@ -72,8 +72,8 @@ export default function CheckoutPage() {
     }
   };
 
-   const isFormValid = () => {
-    const isBasicInfoValid = 
+  const isFormValid = () => {
+    const isBasicInfoValid =
       formData.name.trim() !== '' &&
       formData.city !== '' &&
       formData.address !== '';
@@ -114,6 +114,9 @@ export default function CheckoutPage() {
                 onChange={handleInputChange}
                 required
               />
+              {formData.phone.includes('_') && formData.phone.length > 0 && (
+                <p style={{ color: 'red', fontSize: '12px' }}>Please enter the full phone number.</p>
+              )}
             </section>
 
             <section className="form-section">
@@ -197,7 +200,7 @@ export default function CheckoutPage() {
         </div>
       </div>
       {showSuccessModal && <ModalSuccess onClose={() => setShowSuccessModal(false)} />}
-      
+
     </>
   );
 }
