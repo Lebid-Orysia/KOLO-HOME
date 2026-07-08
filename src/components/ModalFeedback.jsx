@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-const BOT_TOKEN = '8939819824:AAFjKgg7kbRNcf-CydQeIFbHEODgq_AHvNM';
-const CHAT_ID = '-1003789218824';
+import { InputMask } from '@react-input/mask';
+const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+const CHAT_ID = import.meta.env.VITE_CHAT_ID;
 
 const ModalFeedback = ({ onClose }) => {
   const [formData, setFormData] = useState({ name: '', contact: '', message: '' });
@@ -16,12 +17,13 @@ const ModalFeedback = ({ onClose }) => {
   };
 
   const validatePhone = (phone) => {
-    const phoneRegex = /^[+]?[\d\s\-()]{9,15}$/;
-    return phoneRegex.test(phone);
+    const cleanPhone = phone.replace(/\D/g, '');
+    return cleanPhone.length === 12;
   };
 
   const handleInputChange = (field, value) => {
-    setFormData({ ...formData, [field]: value });
+    setFormData((prev) => ({ ...prev, [field]: value })); 
+
     if (value.trim() !== '') {
       setErrors((prev) => ({ ...prev, [field]: '' }));
     }
@@ -37,7 +39,7 @@ const ModalFeedback = ({ onClose }) => {
       isFormValid = false;
       newErrors.name = 'Field cannot be empty.';
     }
-    
+
     if (formData.contact.trim() === '') {
       isFormValid = false;
       newErrors.contact = 'Field cannot be empty.';
@@ -78,16 +80,16 @@ const ModalFeedback = ({ onClose }) => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
-        
+
         <h3>Contact us</h3>
         <p>Leave your contact details, and we’ll create something cozy together!</p>
 
         <form onSubmit={handleSubmit} className="feedback-form">
           <div className="form-group">
             <label htmlFor="name">Your name</label>
-            <input 
-              type="text" 
-              id="name" 
+            <input
+              type="text"
+              id="name"
               className={errors.name ? 'input-error' : ''}
               disabled={isSubmitting}
               value={formData.name}
@@ -98,26 +100,28 @@ const ModalFeedback = ({ onClose }) => {
 
           <div className="form-group">
             <label htmlFor="contact">Phone</label>
-            <input 
-              type="tel" 
-              id="contact" 
+            <InputMask
+              mask="+380 (__) ___-__-__"
+              replacement={{ _: /\d/ }}
+              type="tel"
+              id="contact"
               className={errors.contact ? 'input-error' : ''}
               disabled={isSubmitting}
               value={formData.contact}
               onChange={(e) => handleInputChange('contact', e.target.value)}
-              placeholder="+380XXXXXXXXX"
+              placeholder="+380 (XX) XXX-XX-XX"
             />
             {errors.contact && <span className="input-error-message" style={{ color: 'red' }}>{errors.contact}</span>}
           </div>
 
           <div className="form-group">
             <label htmlFor="message">Your message (optional)</label>
-            <textarea 
-              id="message" 
+            <textarea
+              id="message"
               rows="4"
               disabled={isSubmitting}
               value={formData.message}
-              onChange={(e) => setFormData({...formData, message: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             ></textarea>
           </div>
 

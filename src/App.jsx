@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
-import { Outlet } from "react-router-dom"; 
+import { Outlet, useLocation } from "react-router-dom"; 
 import useCartStore from './store/useCartStore';
 import Header from './components/Header';
 import CartSidebar from './components/CartSidebar';
 
 export default function App() {
   const isCartOpen = useCartStore((state) => state.isCartOpen);
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   useEffect(() => {
     if (isCartOpen) {
       document.body.style.overflow = 'hidden';

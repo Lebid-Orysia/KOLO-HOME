@@ -13,8 +13,6 @@ export default function CategoryProducts() {
     const cleanBase = baseUrl.startsWith('/') ? baseUrl : `/${baseUrl}`;
     const targetUrl = `${origin}${cleanBase}mocks/products.json`.replace(/([^:]\/)\/+/g, "$1");
 
-    console.log("✈️ Шлях запиту для категорій:", targetUrl);
-
     fetch(targetUrl)
       .then((res) => {
         if (!res.ok) {

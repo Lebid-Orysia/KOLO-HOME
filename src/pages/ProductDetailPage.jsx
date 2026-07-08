@@ -20,8 +20,6 @@ function ProductDetailPage() {
     const cleanBase = baseUrl.startsWith('/') ? baseUrl : `/${baseUrl}`;
     const targetUrl = `${origin}${cleanBase}mocks/products.json`.replace(/([^:]\/)\/+/g, "$1");
 
-    console.log("✈️ Шлях запиту для деталей продукту:", targetUrl);
-
     fetch(targetUrl)
       .then((res) => {
         if (!res.ok) throw new Error('Network error while downloading the file');
