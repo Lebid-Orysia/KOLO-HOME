@@ -14,34 +14,6 @@
       grid-template-columns: 1fr;
     }
   }
-  .checkout-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: $background-color_4;
-    padding: 25px;
-    border-radius: 4px;
-
-    h3 {
-      font-family: $font-family_1;
-      color: $color_1;
-      margin-bottom: 10px;
-    }
-
-    input,
-    textarea {
-      padding: 12px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-family: $font-family_2;
-      @include fz(16);
-
-      &:focus {
-        border-color: $border-color_1;
-        outline: none;
-      }
-    }
-  }
 
   .checkout-summary {
     background: $background-color_3;
@@ -94,8 +66,13 @@
         gap: 10px;
 
         button {
+          background-color: $background-color_4;
+          border: 1px solid lighten($color_5, 30%);
           padding: 2px 8px;
           cursor: pointer;
+          &:hover{
+            background-color: $color_11;
+          }
         }
       }
 
@@ -107,13 +84,15 @@
         gap: 5px;
 
         button {
+          width: 40px;
+          height: 40px;
           background: none;
           border: none;
           color: $color_6;
           cursor: pointer;
 
           &:hover {
-            color: red;
+            color: $color_2;
           }
         }
       }
@@ -170,7 +149,6 @@
     flex-direction: column;
     gap: 50px;
     background: $background-color_4;
-    padding: 0 25px;
     border-radius: 8px;
 
     .form-section {
@@ -184,10 +162,16 @@
     }
 
     h3 {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
       font-family: $font-family_1;
       color: $color_1;
       margin-bottom: 5px;
       @include fz(18);
+      span svg{
+        width: 70px;
+      }
     }
 
     input,
@@ -202,7 +186,6 @@
 }
 
 .select-custom {
-  margin-top: 10px;
 
   .select__control {
     height: 50px;
