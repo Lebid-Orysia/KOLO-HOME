@@ -70,7 +70,8 @@
           border: 1px solid lighten($color_5, 30%);
           padding: 2px 8px;
           cursor: pointer;
-          &:hover{
+
+          &:hover {
             background-color: $color_11;
           }
         }
@@ -169,7 +170,8 @@
       color: $color_1;
       margin-bottom: 5px;
       @include fz(18);
-      span svg{
+
+      span svg {
         width: 70px;
       }
     }
@@ -181,6 +183,15 @@
       border: 1px solid $color_11;
       border-radius: 4px;
       font-family: $font-family_2;
+
+      &:hover {
+        border-color: lighten($color_6, 30%);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $color_2;
+      }
     }
   }
 }
