@@ -44,6 +44,8 @@
   }
 
   &__close-btn {
+    width: 45px;
+    height: 45px;
     background: none;
     border: none;
     cursor: pointer;
@@ -128,7 +130,7 @@
       transition: all 0.2s ease;
 
       &:hover {
-        background: $background-color_3;
+        background: $color_11;
       }
     }
 
@@ -145,6 +147,8 @@
   }
 
   &__remove-btn {
+    width: 45px;
+    height: 45px;
     background: none;
     border: none;
     color: $color_6;
@@ -181,6 +185,7 @@
   }
 
   &__checkout-btn {
+    font-family: $font-family_1;
     display: flex;
     align-items: center;
     justify-content: center;
